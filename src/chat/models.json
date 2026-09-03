@@ -1,0 +1,13 @@
+{
+  "default": "claude-sonnet-5",
+  "note": "Model catalog in the same shape as the Zed provider settings: name, max_tokens (context window), max_output_tokens (generation cap). The ACTUAL request max_tokens is taken from max_output_tokens, NOT the context window. Editable without rebuild — restart the app to re-read. Current generation per Anthropic docs: claude-fable-5 / claude-opus-5 / claude-sonnet-5 / claude-haiku-4-5. The chat reads the model set in the settings window (config-store.model); this list only pre-fills / validates the datalist.",
+  "models": [
+    { "name": "claude-sonnet-5", "max_tokens": 1000000, "max_output_tokens": 128000 },
+    { "name": "claude-opus-5", "max_tokens": 1000000, "max_output_tokens": 128000 },
+    { "name": "claude-fable-5", "max_tokens": 1000000, "max_output_tokens": 128000 },
+    { "name": "claude-haiku-4-5-20251001", "max_tokens": 200000, "max_output_tokens": 64000 },
+    { "name": "claude-haiku-4-5", "max_tokens": 200000, "max_output_tokens": 64000 },
+    { "name": "claude-sonnet-4-5", "max_tokens": 200000, "max_output_tokens": 64000 },
+    { "name": "claude-opus-4-1", "max_tokens": 200000, "max_output_tokens": 32000 }
+  ]
+}

@@ -1,0 +1,581 @@
+{
+  "theme": "light",
+  "ok": true,
+  "report": {
+    "archifyEnabled": true,
+    "previewNoMutate": true,
+    "dialogHasMode": true,
+    "dialogCounts": {
+      "components": true,
+      "connections": true,
+      "boundaries": true
+    },
+    "dialogNoLeak": true,
+    "refreshAvailable": true,
+    "refreshSceneUnchanged": true,
+    "refreshDialogStillOpen": true,
+    "cancelStatus": "cancelled",
+    "cancelSceneUnchanged": true,
+    "confirmPreviewNoMutate": true,
+    "appliedStatus": "applied",
+    "appliedOnce": true,
+    "receiptHasMode": true,
+    "alreadyApplied": "already_applied",
+    "repeatSceneUnchanged": true,
+    "staleStatus": "stale",
+    "staleSceneUnchanged": true,
+    "failedStatus": "failed",
+    "failedSceneUnchanged": true,
+    "failedNoLeak": true,
+    "escapeStatus": "cancelled",
+    "escapeSceneUnchanged": true,
+    "lifecycleStatus": "failed",
+    "lifecycleRejected": true,
+    "lifecycleSceneUnchanged": true,
+    "directIdempotent": true,
+    "directFirst": "applied",
+    "directSecond": "already_applied",
+    "finalLive": 36
+  },
+  "cliGated": {
+    "ok": true,
+    "diagram_type": "architecture",
+    "layout": {
+      "mode": "free"
+    },
+    "viewBox": [
+      1160,
+      620
+    ],
+    "components": [
+      {
+        "id": "main_process",
+        "type": "external",
+        "label": "Electron Main",
+        "x": 40,
+        "y": 60,
+        "width": 150,
+        "height": 64,
+        "pos": [
+          40,
+          60
+        ]
+      },
+      {
+        "id": "composition_root",
+        "type": "frontend",
+        "label": "Composition Root",
+        "x": 260,
+        "y": 60,
+        "width": 160,
+        "height": 64,
+        "pos": [
+          260,
+          60
+        ]
+      },
+      {
+        "id": "theme_store",
+        "type": "backend",
+        "label": "Theme Store",
+        "x": 490,
+        "y": 60,
+        "width": 150,
+        "height": 64,
+        "pos": [
+          490,
+          60
+        ]
+      },
+      {
+        "id": "chat_panel",
+        "type": "frontend",
+        "label": "Chat UI Panel",
+        "x": 40,
+        "y": 240,
+        "width": 150,
+        "height": 64,
+        "pos": [
+          40,
+          240
+        ]
+      },
+      {
+        "id": "llm_client",
+        "type": "backend",
+        "label": "LLM Seam / Stub",
+        "x": 260,
+        "y": 240,
+        "width": 160,
+        "height": 64,
+        "pos": [
+          260,
+          240
+        ]
+      },
+      {
+        "id": "bridge_layer",
+        "type": "messagebus",
+        "label": "Bridge Facade",
+        "x": 490,
+        "y": 240,
+        "width": 150,
+        "height": 64,
+        "pos": [
+          490,
+          240
+        ]
+      },
+      {
+        "id": "command_engine",
+        "type": "backend",
+        "label": "Command Engine",
+        "x": 720,
+        "y": 240,
+        "width": 160,
+        "height": 64,
+        "pos": [
+          720,
+          240
+        ]
+      },
+      {
+        "id": "canvas_adapter",
+        "type": "backend",
+        "label": "Canvas Adapter",
+        "x": 950,
+        "y": 240,
+        "width": 150,
+        "height": 64,
+        "pos": [
+          950,
+          240
+        ]
+      },
+      {
+        "id": "project_store",
+        "type": "database",
+        "label": "Project Store",
+        "x": 490,
+        "y": 430,
+        "width": 150,
+        "height": 64,
+        "pos": [
+          490,
+          430
+        ]
+      },
+      {
+        "id": "context_store",
+        "type": "messagebus",
+        "label": "Context Store",
+        "x": 720,
+        "y": 430,
+        "width": 160,
+        "height": 64,
+        "pos": [
+          720,
+          430
+        ]
+      },
+      {
+        "id": "canvas_island",
+        "type": "frontend",
+        "label": "Excalidraw Island",
+        "x": 950,
+        "y": 430,
+        "width": 150,
+        "height": 64,
+        "pos": [
+          950,
+          430
+        ]
+      }
+    ],
+    "boundaries": [
+      {
+        "kind": "region",
+        "label": "Host & Lifecycle",
+        "x": 10,
+        "y": 30,
+        "width": 660,
+        "height": 114,
+        "wraps": [
+          "main_process",
+          "composition_root",
+          "theme_store"
+        ]
+      },
+      {
+        "kind": "region",
+        "label": "Chat Subsystem (Изолированный UI)",
+        "x": 10,
+        "y": 210,
+        "width": 440,
+        "height": 114,
+        "wraps": [
+          "chat_panel",
+          "llm_client"
+        ]
+      },
+      {
+        "kind": "region",
+        "label": "Bridge Protocol (Шина взаимодействия)",
+        "x": 460,
+        "y": 210,
+        "width": 450,
+        "height": 304,
+        "wraps": [
+          "bridge_layer",
+          "command_engine",
+          "context_store"
+        ]
+      },
+      {
+        "kind": "region",
+        "label": "Canvas Runtime (Excalidraw)",
+        "x": 920,
+        "y": 210,
+        "width": 210,
+        "height": 304,
+        "wraps": [
+          "canvas_adapter",
+          "canvas_island"
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "from": "main_process",
+        "to": "composition_root",
+        "label": "loadURL",
+        "variant": "default",
+        "route": "auto",
+        "points": [
+          [
+            190,
+            92
+          ],
+          [
+            260,
+            92
+          ]
+        ],
+        "labelAt": [
+          225,
+          82
+        ]
+      },
+      {
+        "from": "composition_root",
+        "to": "theme_store",
+        "label": "applyTheme",
+        "variant": "default",
+        "route": "auto",
+        "points": [
+          [
+            420,
+            92
+          ],
+          [
+            490,
+            92
+          ]
+        ],
+        "labelAt": [
+          455,
+          82
+        ]
+      },
+      {
+        "from": "chat_panel",
+        "to": "llm_client",
+        "label": "sendMessage",
+        "variant": "emphasis",
+        "route": "auto",
+        "points": [
+          [
+            190,
+            272
+          ],
+          [
+            260,
+            272
+          ]
+        ],
+        "labelAt": [
+          225,
+          262
+        ]
+      },
+      {
+        "from": "llm_client",
+        "to": "bridge_layer",
+        "label": "use_command",
+        "variant": "emphasis",
+        "route": "auto",
+        "points": [
+          [
+            420,
+            272
+          ],
+          [
+            490,
+            272
+          ]
+        ],
+        "labelAt": [
+          455,
+          262
+        ]
+      },
+      {
+        "from": "bridge_layer",
+        "to": "command_engine",
+        "label": "dispatch",
+        "variant": "default",
+        "route": "auto",
+        "points": [
+          [
+            640,
+            265
+          ],
+          [
+            720,
+            265
+          ]
+        ],
+        "labelAt": [
+          680,
+          255
+        ]
+      },
+      {
+        "from": "command_engine",
+        "to": "canvas_adapter",
+        "label": "мутации",
+        "variant": "emphasis",
+        "route": "auto",
+        "points": [
+          [
+            880,
+            272
+          ],
+          [
+            950,
+            272
+          ]
+        ],
+        "labelAt": [
+          915,
+          262
+        ]
+      },
+      {
+        "from": "bridge_layer",
+        "to": "project_store",
+        "label": "граф / линки",
+        "variant": "default",
+        "route": "auto",
+        "points": [
+          [
+            565,
+            304
+          ],
+          [
+            565,
+            430
+          ]
+        ],
+        "labelAt": [
+          565,
+          318
+        ]
+      },
+      {
+        "from": "canvas_adapter",
+        "to": "canvas_island",
+        "label": "updateScene",
+        "variant": "default",
+        "route": "auto",
+        "points": [
+          [
+            1025,
+            304
+          ],
+          [
+            1025,
+            430
+          ]
+        ],
+        "labelAt": [
+          1025,
+          318
+        ]
+      },
+      {
+        "from": "canvas_island",
+        "to": "context_store",
+        "label": "выделение",
+        "variant": "dashed",
+        "route": "auto",
+        "points": [
+          [
+            950,
+            462
+          ],
+          [
+            880,
+            462
+          ]
+        ],
+        "labelAt": [
+          915,
+          452
+        ]
+      },
+      {
+        "from": "context_store",
+        "to": "bridge_layer",
+        "label": "onContextChange",
+        "variant": "dashed",
+        "route": "auto",
+        "points": [
+          [
+            720,
+            462
+          ],
+          [
+            680,
+            462
+          ],
+          [
+            680,
+            279
+          ],
+          [
+            640,
+            279
+          ]
+        ],
+        "labelAt": [
+          680,
+          361
+        ]
+      }
+    ],
+    "labels": [
+      {
+        "text": "loadURL",
+        "x": 203,
+        "y": 72,
+        "width": 44,
+        "height": 14,
+        "labelAt": [
+          225,
+          82
+        ]
+      },
+      {
+        "text": "applyTheme",
+        "x": 426,
+        "y": 72,
+        "width": 58,
+        "height": 14,
+        "labelAt": [
+          455,
+          82
+        ]
+      },
+      {
+        "text": "sendMessage",
+        "x": 194,
+        "y": 252,
+        "width": 63,
+        "height": 14,
+        "labelAt": [
+          225,
+          262
+        ]
+      },
+      {
+        "text": "use_command",
+        "x": 424,
+        "y": 252,
+        "width": 63,
+        "height": 14,
+        "labelAt": [
+          455,
+          262
+        ]
+      },
+      {
+        "text": "dispatch",
+        "x": 656,
+        "y": 245,
+        "width": 48,
+        "height": 14,
+        "labelAt": [
+          680,
+          255
+        ]
+      },
+      {
+        "text": "мутации",
+        "x": 893,
+        "y": 252,
+        "width": 44,
+        "height": 14,
+        "labelAt": [
+          915,
+          262
+        ]
+      },
+      {
+        "text": "граф / линки",
+        "x": 531,
+        "y": 308,
+        "width": 68,
+        "height": 14,
+        "labelAt": [
+          565,
+          318
+        ]
+      },
+      {
+        "text": "updateScene",
+        "x": 994,
+        "y": 308,
+        "width": 63,
+        "height": 14,
+        "labelAt": [
+          1025,
+          318
+        ]
+      },
+      {
+        "text": "выделение",
+        "x": 888,
+        "y": 442,
+        "width": 53,
+        "height": 14,
+        "labelAt": [
+          915,
+          452
+        ]
+      },
+      {
+        "text": "onContextChange",
+        "x": 639,
+        "y": 351,
+        "width": 82,
+        "height": 14,
+        "labelAt": [
+          680,
+          361
+        ]
+      }
+    ]
+  },
+  "passedAt": "2026-09-02T18:13:25.713Z"
+}

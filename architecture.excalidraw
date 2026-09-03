@@ -1,0 +1,3889 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "canvas-v2-rebuild",
+  "elements": [
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "seed": 2122018527,
+      "version": 3,
+      "versionNonce": 1047733992,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "frame-0-host-lifecycle",
+      "type": "frame",
+      "x": 0,
+      "y": 0,
+      "width": 450,
+      "height": 114,
+      "angle": 0,
+      "name": "Host & Lifecycle",
+      "customData": {
+        "archifyBoundary": true,
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "boundary",
+          "sourceElementId": "Host & Lifecycle",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9"
+        }
+      },
+      "index": "Zv"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "seed": 1123754566,
+      "version": 3,
+      "versionNonce": 1927569162,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "frame-1-chat-subsystem",
+      "type": "frame",
+      "x": 0,
+      "y": 150,
+      "width": 440,
+      "height": 114,
+      "angle": 0,
+      "name": "Chat Subsystem",
+      "customData": {
+        "archifyBoundary": true,
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "boundary",
+          "sourceElementId": "Chat Subsystem",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9"
+        }
+      },
+      "index": "Zw"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "seed": 1142209234,
+      "version": 3,
+      "versionNonce": 1666953736,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "frame-2-bridge-protocol",
+      "type": "frame",
+      "x": 420,
+      "y": 150,
+      "width": 430,
+      "height": 114,
+      "angle": 0,
+      "name": "Bridge Protocol",
+      "customData": {
+        "archifyBoundary": true,
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "boundary",
+          "sourceElementId": "Bridge Protocol",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9"
+        }
+      },
+      "index": "Zx"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "seed": 1665166727,
+      "version": 3,
+      "versionNonce": 1458935274,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "frame-3-canvas-runtime",
+      "type": "frame",
+      "x": 820,
+      "y": 150,
+      "width": 440,
+      "height": 114,
+      "angle": 0,
+      "name": "Canvas Runtime",
+      "customData": {
+        "archifyBoundary": true,
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "boundary",
+          "sourceElementId": "Canvas Runtime",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9"
+        }
+      },
+      "index": "Zy"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "seed": 486683298,
+      "version": 3,
+      "versionNonce": 1833294120,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "frame-4-project-evidence-backend",
+      "type": "frame",
+      "x": 0,
+      "y": 400,
+      "width": 921.5,
+      "height": 114,
+      "angle": 0,
+      "name": "Project & Evidence Backend",
+      "customData": {
+        "archifyBoundary": true,
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "boundary",
+          "sourceElementId": "Project & Evidence Backend",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9"
+        }
+      },
+      "index": "Zz"
+    },
+    {
+      "id": "node-electron_main",
+      "type": "rectangle",
+      "x": 30,
+      "y": 30,
+      "width": 170,
+      "height": 64,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-0-host-lifecycle",
+      "index": "a0",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 728708391,
+      "version": 3,
+      "versionNonce": 1656024040,
+      "isDeleted": true,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-electron_main"
+        },
+        {
+          "id": "edge-electron_main-composition_root",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "electron_main",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "electron_main",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "electron_main",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      }
+    },
+    {
+      "id": "node-composition_root",
+      "type": "rectangle",
+      "x": 240,
+      "y": 30,
+      "width": 180,
+      "height": 64,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-0-host-lifecycle",
+      "index": "a1",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1848071369,
+      "version": 3,
+      "versionNonce": 5073418,
+      "isDeleted": true,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-composition_root"
+        },
+        {
+          "id": "edge-electron_main-composition_root",
+          "type": "arrow"
+        },
+        {
+          "id": "edge-composition_root-chat_panel",
+          "type": "arrow"
+        },
+        {
+          "id": "edge-composition_root-canvas_island",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "composition_root",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "composition_root",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "composition_root",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      }
+    },
+    {
+      "id": "node-chat_panel",
+      "type": "rectangle",
+      "x": 30,
+      "y": 180,
+      "width": 170,
+      "height": 64,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-1-chat-subsystem",
+      "index": "a2",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1782315079,
+      "version": 3,
+      "versionNonce": 85776136,
+      "isDeleted": true,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-chat_panel"
+        },
+        {
+          "id": "edge-composition_root-chat_panel",
+          "type": "arrow"
+        },
+        {
+          "id": "edge-chat_panel-llm_client",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "chat_panel",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "chat_panel",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "chat_panel",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      }
+    },
+    {
+      "id": "node-llm_client",
+      "type": "rectangle",
+      "x": 240,
+      "y": 180,
+      "width": 170,
+      "height": 64,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-1-chat-subsystem",
+      "index": "a3",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1641272233,
+      "version": 3,
+      "versionNonce": 151339242,
+      "isDeleted": true,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-llm_client"
+        },
+        {
+          "id": "edge-chat_panel-llm_client",
+          "type": "arrow"
+        },
+        {
+          "id": "edge-llm_client-bridge_facade",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "llm_client",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "llm_client",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "llm_client",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      }
+    },
+    {
+      "id": "node-bridge_facade",
+      "type": "rectangle",
+      "x": 450,
+      "y": 180,
+      "width": 160,
+      "height": 64,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-2-bridge-protocol",
+      "index": "a4",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 885217127,
+      "version": 3,
+      "versionNonce": 1704615464,
+      "isDeleted": true,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-bridge_facade"
+        },
+        {
+          "id": "edge-llm_client-bridge_facade",
+          "type": "arrow"
+        },
+        {
+          "id": "edge-bridge_facade-command_engine",
+          "type": "arrow"
+        },
+        {
+          "id": "edge-bridge_facade-project_backend",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "bridge_facade",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "bridge_facade",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "bridge_facade",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      }
+    },
+    {
+      "id": "node-command_engine",
+      "type": "rectangle",
+      "x": 640,
+      "y": 180,
+      "width": 180,
+      "height": 64,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-2-bridge-protocol",
+      "index": "a5",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1833793161,
+      "version": 3,
+      "versionNonce": 509557706,
+      "isDeleted": true,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-command_engine"
+        },
+        {
+          "id": "edge-bridge_facade-command_engine",
+          "type": "arrow"
+        },
+        {
+          "id": "edge-command_engine-canvas_adapter",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "command_engine",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "command_engine",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "command_engine",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      }
+    },
+    {
+      "id": "node-canvas_adapter",
+      "type": "rectangle",
+      "x": 850,
+      "y": 180,
+      "width": 170,
+      "height": 64,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-3-canvas-runtime",
+      "index": "a6",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1901187719,
+      "version": 3,
+      "versionNonce": 1729757512,
+      "isDeleted": true,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-canvas_adapter"
+        },
+        {
+          "id": "edge-command_engine-canvas_adapter",
+          "type": "arrow"
+        },
+        {
+          "id": "edge-canvas_adapter-canvas_island",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "canvas_adapter",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "canvas_adapter",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "canvas_adapter",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      }
+    },
+    {
+      "id": "node-canvas_island",
+      "type": "rectangle",
+      "x": 1050,
+      "y": 180,
+      "width": 180,
+      "height": 64,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-3-canvas-runtime",
+      "index": "a7",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1666170217,
+      "version": 3,
+      "versionNonce": 813095594,
+      "isDeleted": true,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-canvas_island"
+        },
+        {
+          "id": "edge-composition_root-canvas_island",
+          "type": "arrow"
+        },
+        {
+          "id": "edge-canvas_adapter-canvas_island",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "canvas_island",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "canvas_island",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "canvas_island",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      }
+    },
+    {
+      "id": "node-ast_workbench",
+      "type": "rectangle",
+      "x": 30,
+      "y": 430,
+      "width": 180,
+      "height": 64,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-4-project-evidence-backend",
+      "index": "a8",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 144959911,
+      "version": 3,
+      "versionNonce": 1526218856,
+      "isDeleted": true,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-ast_workbench"
+        },
+        {
+          "id": "edge-ast_workbench-project_backend",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "ast_workbench",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "ast_workbench",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "ast_workbench",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      }
+    },
+    {
+      "id": "node-project_backend",
+      "type": "rectangle",
+      "x": 230.5,
+      "y": 430,
+      "width": 219,
+      "height": 64,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-4-project-evidence-backend",
+      "index": "a9",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 858138697,
+      "version": 3,
+      "versionNonce": 536321418,
+      "isDeleted": true,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-project_backend"
+        },
+        {
+          "id": "edge-bridge_facade-project_backend",
+          "type": "arrow"
+        },
+        {
+          "id": "edge-project_backend-evidence_builder",
+          "type": "arrow"
+        },
+        {
+          "id": "edge-ast_workbench-project_backend",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "project_backend",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "project_backend",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "project_backend",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      }
+    },
+    {
+      "id": "node-evidence_builder",
+      "type": "rectangle",
+      "x": 480,
+      "y": 430,
+      "width": 180,
+      "height": 64,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-4-project-evidence-backend",
+      "index": "aA",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 400956615,
+      "version": 3,
+      "versionNonce": 855743368,
+      "isDeleted": true,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-evidence_builder"
+        },
+        {
+          "id": "edge-project_backend-evidence_builder",
+          "type": "arrow"
+        },
+        {
+          "id": "edge-evidence_builder-archify_cli",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "evidence_builder",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "evidence_builder",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "evidence_builder",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      }
+    },
+    {
+      "id": "node-archify_cli",
+      "type": "rectangle",
+      "x": 708.5,
+      "y": 430,
+      "width": 183,
+      "height": 64,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-4-project-evidence-backend",
+      "index": "aB",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1454126889,
+      "version": 3,
+      "versionNonce": 740099178,
+      "isDeleted": true,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-archify_cli"
+        },
+        {
+          "id": "edge-evidence_builder-archify_cli",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "archify_cli",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "archify_cli",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "archify_cli",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      }
+    },
+    {
+      "id": "text-electron_main",
+      "type": "text",
+      "x": 69.015625,
+      "y": 52,
+      "width": 91.96875,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-0-host-lifecycle",
+      "index": "aC",
+      "roundness": null,
+      "seed": 1936888487,
+      "version": 4,
+      "versionNonce": 1032171560,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "electron_main",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "electron_main",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "electron_main",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      },
+      "text": "Electron Main",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-electron_main",
+      "originalText": "Electron Main",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "text-composition_root",
+      "type": "text",
+      "x": 271.1015625,
+      "y": 52,
+      "width": 117.796875,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-0-host-lifecycle",
+      "index": "aD",
+      "roundness": null,
+      "seed": 1693951431,
+      "version": 4,
+      "versionNonce": 185207242,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "composition_root",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "composition_root",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "composition_root",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      },
+      "text": "Composition Root",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-composition_root",
+      "originalText": "Composition Root",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "text-chat_panel",
+      "type": "text",
+      "x": 69.67578125,
+      "y": 202,
+      "width": 90.6484375,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-1-chat-subsystem",
+      "index": "aE",
+      "roundness": null,
+      "seed": 112022759,
+      "version": 4,
+      "versionNonce": 164303688,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "chat_panel",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "chat_panel",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "chat_panel",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      },
+      "text": "Chat UI Panel",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-chat_panel",
+      "originalText": "Chat UI Panel",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "text-llm_client",
+      "type": "text",
+      "x": 267.4453125,
+      "y": 202,
+      "width": 115.109375,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-1-chat-subsystem",
+      "index": "aF",
+      "roundness": null,
+      "seed": 1075847175,
+      "version": 4,
+      "versionNonce": 446163114,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "llm_client",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "llm_client",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "llm_client",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      },
+      "text": "LLM Seam / Stub",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-llm_client",
+      "originalText": "LLM Seam / Stub",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "text-bridge_facade",
+      "type": "text",
+      "x": 483.57421875,
+      "y": 202,
+      "width": 92.8515625,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-2-bridge-protocol",
+      "index": "aG",
+      "roundness": null,
+      "seed": 1397524263,
+      "version": 4,
+      "versionNonce": 1773605480,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "bridge_facade",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "bridge_facade",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "bridge_facade",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      },
+      "text": "Bridge Facade",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-bridge_facade",
+      "originalText": "Bridge Facade",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "text-command_engine",
+      "type": "text",
+      "x": 672.0078125,
+      "y": 202,
+      "width": 115.984375,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-2-bridge-protocol",
+      "index": "aH",
+      "roundness": null,
+      "seed": 245303879,
+      "version": 4,
+      "versionNonce": 2126965642,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "command_engine",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "command_engine",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "command_engine",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      },
+      "text": "Command Engine",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-command_engine",
+      "originalText": "Command Engine",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "text-canvas_adapter",
+      "type": "text",
+      "x": 883.68359375,
+      "y": 202,
+      "width": 102.6328125,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-3-canvas-runtime",
+      "index": "aI",
+      "roundness": null,
+      "seed": 1056188775,
+      "version": 4,
+      "versionNonce": 1712729480,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "canvas_adapter",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "canvas_adapter",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "canvas_adapter",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      },
+      "text": "Canvas Adapter",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-canvas_adapter",
+      "originalText": "Canvas Adapter",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "text-canvas_island",
+      "type": "text",
+      "x": 1082.0234375,
+      "y": 202,
+      "width": 115.953125,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-3-canvas-runtime",
+      "index": "aJ",
+      "roundness": null,
+      "seed": 1637377159,
+      "version": 4,
+      "versionNonce": 1339200106,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "canvas_island",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "canvas_island",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "canvas_island",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      },
+      "text": "Excalidraw Island",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-canvas_island",
+      "originalText": "Excalidraw Island",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "text-ast_workbench",
+      "type": "text",
+      "x": 66.2109375,
+      "y": 452,
+      "width": 107.578125,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-4-project-evidence-backend",
+      "index": "aK",
+      "roundness": null,
+      "seed": 373832615,
+      "version": 4,
+      "versionNonce": 975496360,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "ast_workbench",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "ast_workbench",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "ast_workbench",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      },
+      "text": "AST Workbench",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-ast_workbench",
+      "originalText": "AST Workbench",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "text-project_backend",
+      "type": "text",
+      "x": 265.9140625,
+      "y": 452,
+      "width": 148.171875,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-4-project-evidence-backend",
+      "index": "aL",
+      "roundness": null,
+      "seed": 1362112199,
+      "version": 4,
+      "versionNonce": 310795594,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "project_backend",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "project_backend",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "project_backend",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      },
+      "text": "Project Evidence Tools",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-project_backend",
+      "originalText": "Project Evidence Tools",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "text-evidence_builder",
+      "type": "text",
+      "x": 514.2421875,
+      "y": 452,
+      "width": 111.515625,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-4-project-evidence-backend",
+      "index": "aM",
+      "roundness": null,
+      "seed": 1290583527,
+      "version": 4,
+      "versionNonce": 93304776,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "evidence_builder",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "evidence_builder",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "evidence_builder",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      },
+      "text": "Evidence Builder",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-evidence_builder",
+      "originalText": "Evidence Builder",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "text-archify_cli",
+      "type": "text",
+      "x": 738.89453125,
+      "y": 452,
+      "width": 122.2109375,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-4-project-evidence-backend",
+      "index": "aN",
+      "roundness": null,
+      "seed": 1015703815,
+      "version": 4,
+      "versionNonce": 641584170,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "archify_cli",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "archify_cli",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9",
+          "astAnchor": {
+            "version": 1,
+            "componentId": "archify_cli",
+            "own": [],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      },
+      "text": "Archify Skill / CLI",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-archify_cli",
+      "originalText": "Archify Skill / CLI",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1350645304,
+      "version": 3,
+      "versionNonce": 1434251466,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "edge-electron_main-composition_root",
+      "type": "arrow",
+      "x": 204,
+      "y": 62,
+      "width": 32,
+      "height": 0,
+      "angle": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          32,
+          0
+        ]
+      ],
+      "startBinding": {
+        "elementId": "node-electron_main",
+        "focus": 0,
+        "gap": 4
+      },
+      "endBinding": {
+        "elementId": "node-composition_root",
+        "focus": 0,
+        "gap": 4
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "customData": {
+        "edgeLabel": "loadURL",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "connection",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9"
+        }
+      },
+      "index": "aO"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1814179764,
+      "version": 3,
+      "versionNonce": 27139144,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "edge-composition_root-chat_panel",
+      "type": "arrow",
+      "x": 278.4,
+      "y": 98,
+      "width": -111.79999999999998,
+      "height": 78,
+      "angle": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -111.79999999999998,
+          78
+        ]
+      ],
+      "startBinding": {
+        "elementId": "node-composition_root",
+        "focus": 0,
+        "gap": 4
+      },
+      "endBinding": {
+        "elementId": "node-chat_panel",
+        "focus": 0,
+        "gap": 4
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "customData": {
+        "edgeLabel": "mountChat",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "connection",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9"
+        }
+      },
+      "index": "aP"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 957989829,
+      "version": 3,
+      "versionNonce": 68546474,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "edge-composition_root-canvas_island",
+      "type": "arrow",
+      "x": 424,
+      "y": 79.4074074074074,
+      "width": 622,
+      "height": 115.18518518518518,
+      "angle": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          622,
+          115.18518518518518
+        ]
+      ],
+      "startBinding": {
+        "elementId": "node-composition_root",
+        "focus": 0,
+        "gap": 4
+      },
+      "endBinding": {
+        "elementId": "node-canvas_island",
+        "focus": 0,
+        "gap": 4
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "customData": {
+        "edgeLabel": "mountCanvas",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "connection",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9"
+        }
+      },
+      "index": "aQ"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1808553809,
+      "version": 3,
+      "versionNonce": 1681980264,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "edge-chat_panel-llm_client",
+      "type": "arrow",
+      "x": 204,
+      "y": 212,
+      "width": 32,
+      "height": 0,
+      "angle": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          32,
+          0
+        ]
+      ],
+      "startBinding": {
+        "elementId": "node-chat_panel",
+        "focus": 0,
+        "gap": 4
+      },
+      "endBinding": {
+        "elementId": "node-llm_client",
+        "focus": 0,
+        "gap": 4
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "customData": {
+        "edgeLabel": "sendMessage",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "connection",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9"
+        }
+      },
+      "index": "aR"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1969074592,
+      "version": 3,
+      "versionNonce": 954995338,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "edge-llm_client-bridge_facade",
+      "type": "arrow",
+      "x": 414,
+      "y": 212,
+      "width": 32,
+      "height": 0,
+      "angle": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          32,
+          0
+        ]
+      ],
+      "startBinding": {
+        "elementId": "node-llm_client",
+        "focus": 0,
+        "gap": 4
+      },
+      "endBinding": {
+        "elementId": "node-bridge_facade",
+        "focus": 0,
+        "gap": 4
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "customData": {
+        "edgeLabel": "use_command",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "connection",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9"
+        }
+      },
+      "index": "aS"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 273312604,
+      "version": 3,
+      "versionNonce": 695924360,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "edge-bridge_facade-command_engine",
+      "type": "arrow",
+      "x": 614,
+      "y": 212,
+      "width": 22,
+      "height": 0,
+      "angle": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          22,
+          0
+        ]
+      ],
+      "startBinding": {
+        "elementId": "node-bridge_facade",
+        "focus": 0,
+        "gap": 4
+      },
+      "endBinding": {
+        "elementId": "node-command_engine",
+        "focus": 0,
+        "gap": 4
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "customData": {
+        "edgeLabel": "dispatch",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "connection",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9"
+        }
+      },
+      "index": "aT"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1107958470,
+      "version": 3,
+      "versionNonce": 2025511274,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "edge-command_engine-canvas_adapter",
+      "type": "arrow",
+      "x": 824,
+      "y": 212,
+      "width": 22,
+      "height": 0,
+      "angle": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          22,
+          0
+        ]
+      ],
+      "startBinding": {
+        "elementId": "node-command_engine",
+        "focus": 0,
+        "gap": 4
+      },
+      "endBinding": {
+        "elementId": "node-canvas_adapter",
+        "focus": 0,
+        "gap": 4
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "customData": {
+        "edgeLabel": "мутации",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "connection",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9"
+        }
+      },
+      "index": "aU"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 479951396,
+      "version": 3,
+      "versionNonce": 671649192,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "edge-canvas_adapter-canvas_island",
+      "type": "arrow",
+      "x": 1024,
+      "y": 212,
+      "width": 22,
+      "height": 0,
+      "angle": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          22,
+          0
+        ]
+      ],
+      "startBinding": {
+        "elementId": "node-canvas_adapter",
+        "focus": 0,
+        "gap": 4
+      },
+      "endBinding": {
+        "elementId": "node-canvas_island",
+        "focus": 0,
+        "gap": 4
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "customData": {
+        "edgeLabel": "updateScene",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "connection",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9"
+        }
+      },
+      "index": "aV"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 286807651,
+      "version": 3,
+      "versionNonce": 617464906,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "edge-bridge_facade-project_backend",
+      "type": "arrow",
+      "x": 502.64,
+      "y": 248,
+      "width": -135.27999999999997,
+      "height": 178,
+      "angle": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -135.27999999999997,
+          178
+        ]
+      ],
+      "startBinding": {
+        "elementId": "node-bridge_facade",
+        "focus": 0,
+        "gap": 4
+      },
+      "endBinding": {
+        "elementId": "node-project_backend",
+        "focus": 0,
+        "gap": 4
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "customData": {
+        "edgeLabel": "project.* tools",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "connection",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9"
+        }
+      },
+      "index": "aW"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 45660253,
+      "version": 3,
+      "versionNonce": 722878664,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "edge-project_backend-evidence_builder",
+      "type": "arrow",
+      "x": 453.5,
+      "y": 462,
+      "width": 22.5,
+      "height": 0,
+      "angle": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          22.5,
+          0
+        ]
+      ],
+      "startBinding": {
+        "elementId": "node-project_backend",
+        "focus": 0,
+        "gap": 4
+      },
+      "endBinding": {
+        "elementId": "node-evidence_builder",
+        "focus": 0,
+        "gap": 4
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "customData": {
+        "edgeLabel": "source files",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "connection",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9"
+        }
+      },
+      "index": "aX"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 2001274868,
+      "version": 3,
+      "versionNonce": 1761628970,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "edge-evidence_builder-archify_cli",
+      "type": "arrow",
+      "x": 664,
+      "y": 462,
+      "width": 40.5,
+      "height": 0,
+      "angle": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40.5,
+          0
+        ]
+      ],
+      "startBinding": {
+        "elementId": "node-evidence_builder",
+        "focus": 0,
+        "gap": 4
+      },
+      "endBinding": {
+        "elementId": "node-archify_cli",
+        "focus": 0,
+        "gap": 4
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "customData": {
+        "edgeLabel": "candidate validate",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "connection",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9"
+        }
+      },
+      "index": "aY"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1840442485,
+      "version": 3,
+      "versionNonce": 1681952744,
+      "isDeleted": true,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "edge-ast_workbench-project_backend",
+      "type": "arrow",
+      "x": 214,
+      "y": 462,
+      "width": 12.5,
+      "height": 0,
+      "angle": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          12.5,
+          0
+        ]
+      ],
+      "startBinding": {
+        "elementId": "node-ast_workbench",
+        "focus": 0,
+        "gap": 4
+      },
+      "endBinding": {
+        "elementId": "node-project_backend",
+        "focus": 0,
+        "gap": 4
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "customData": {
+        "edgeLabel": "expandAstAnchor",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-5c9c7cd5c64862fb722858f36218aa44",
+          "diagramType": "architecture",
+          "sourceElementKind": "connection",
+          "skillHash": "baabdc65dce19b9d345cf9fca7b6d75ba172043544242d478b32532b84adcc22",
+          "projectSnapshot": "8eea771f4a783602380fea78f7bc76ecdf6cc1dec8cb16f426f8aa16266111e9"
+        }
+      },
+      "index": "aZ"
+    },
+    {
+      "id": "node-ui_chat",
+      "type": "rectangle",
+      "x": 0,
+      "y": 0,
+      "width": 170,
+      "height": 64,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aa",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1259748778,
+      "version": 3,
+      "versionNonce": 1232219510,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-ui_chat"
+        },
+        {
+          "id": "edge-ui_chat-ui_llm",
+          "type": "arrow"
+        },
+        {
+          "id": "edge-ui_chat-ui_bridge",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "ui_chat",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "ui_chat",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      }
+    },
+    {
+      "id": "node-ui_bridge",
+      "type": "rectangle",
+      "x": 260,
+      "y": 0,
+      "width": 160,
+      "height": 64,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "ab",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1186286070,
+      "version": 3,
+      "versionNonce": 1613368554,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-ui_bridge"
+        },
+        {
+          "id": "edge-ui_chat-ui_bridge",
+          "type": "arrow"
+        },
+        {
+          "id": "edge-ui_bridge-mtn_tool",
+          "type": "arrow"
+        },
+        {
+          "id": "edge-ui_bridge-ui_canvas",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "ui_bridge",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "ui_bridge",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      }
+    },
+    {
+      "id": "node-mtn_tool",
+      "type": "rectangle",
+      "x": 520,
+      "y": 0,
+      "width": 200,
+      "height": 64,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "ac",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 563411050,
+      "version": 3,
+      "versionNonce": 418975414,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-mtn_tool"
+        },
+        {
+          "id": "edge-ui_bridge-mtn_tool",
+          "type": "arrow"
+        },
+        {
+          "id": "edge-mtn_tool-mtn_author",
+          "type": "arrow"
+        },
+        {
+          "id": "edge-mtn_tool-store_fs",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "mtn_tool",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "mtn_tool",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      }
+    },
+    {
+      "id": "node-mtn_author",
+      "type": "rectangle",
+      "x": 820,
+      "y": 0,
+      "width": 200,
+      "height": 64,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "ad",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 681876278,
+      "version": 3,
+      "versionNonce": 1508695978,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-mtn_author"
+        },
+        {
+          "id": "edge-mtn_tool-mtn_author",
+          "type": "arrow"
+        },
+        {
+          "id": "edge-mtn_author-ext_cli",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "mtn_author",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "mtn_author",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      }
+    },
+    {
+      "id": "node-ext_cli",
+      "type": "rectangle",
+      "x": 1120,
+      "y": 0,
+      "width": 180,
+      "height": 64,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "ae",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 367942442,
+      "version": 3,
+      "versionNonce": 798083062,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-ext_cli"
+        },
+        {
+          "id": "edge-mtn_author-ext_cli",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "ext_cli",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "ext_cli",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      }
+    },
+    {
+      "id": "node-ui_llm",
+      "type": "rectangle",
+      "x": 0,
+      "y": 160,
+      "width": 170,
+      "height": 64,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "af",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1259848822,
+      "version": 3,
+      "versionNonce": 558324330,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-ui_llm"
+        },
+        {
+          "id": "edge-ui_chat-ui_llm",
+          "type": "arrow"
+        },
+        {
+          "id": "edge-ui_llm-ext_api",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "ui_llm",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "ui_llm",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      }
+    },
+    {
+      "id": "node-ext_api",
+      "type": "rectangle",
+      "x": 260,
+      "y": 160,
+      "width": 170,
+      "height": 64,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "ag",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1720542698,
+      "version": 3,
+      "versionNonce": 2101434678,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-ext_api"
+        },
+        {
+          "id": "edge-ui_llm-ext_api",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "ext_api",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "ext_api",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      }
+    },
+    {
+      "id": "node-store_fs",
+      "type": "rectangle",
+      "x": 520,
+      "y": 160,
+      "width": 180,
+      "height": 64,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "ah",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 533972406,
+      "version": 3,
+      "versionNonce": 1963228458,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-store_fs"
+        },
+        {
+          "id": "edge-mtn_tool-store_fs",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "store_fs",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "store_fs",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      }
+    },
+    {
+      "id": "node-ui_canvas",
+      "type": "rectangle",
+      "x": 520,
+      "y": 320,
+      "width": 180,
+      "height": 64,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "ai",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1283266730,
+      "version": 3,
+      "versionNonce": 694993526,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-ui_canvas"
+        },
+        {
+          "id": "edge-ui_bridge-ui_canvas",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "ui_canvas",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "ui_canvas",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      }
+    },
+    {
+      "id": "text-ui_chat",
+      "type": "text",
+      "x": 34.55989074707031,
+      "y": 22,
+      "width": 100.88021850585938,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aj",
+      "roundness": null,
+      "seed": 103181930,
+      "version": 4,
+      "versionNonce": 42944490,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "ui_chat",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "ui_chat",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      },
+      "text": "Панель чата",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-ui_chat",
+      "originalText": "Панель чата",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "text-ui_bridge",
+      "type": "text",
+      "x": 316.05594635009766,
+      "y": 22,
+      "width": 47.88810729980469,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "ak",
+      "roundness": null,
+      "seed": 350294314,
+      "version": 4,
+      "versionNonce": 651756470,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "ui_bridge",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "ui_bridge",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      },
+      "text": "Bridge",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-ui_bridge",
+      "originalText": "Bridge",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "text-mtn_tool",
+      "type": "text",
+      "x": 543.4078521728516,
+      "y": 22,
+      "width": 153.18429565429688,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "al",
+      "roundness": null,
+      "seed": 565795818,
+      "version": 4,
+      "versionNonce": 301120170,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "mtn_tool",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "mtn_tool",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      },
+      "text": "Исполнитель команд",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-mtn_tool",
+      "originalText": "Исполнитель команд",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "text-mtn_author",
+      "type": "text",
+      "x": 855.4078674316406,
+      "y": 22,
+      "width": 129.18426513671875,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "am",
+      "roundness": null,
+      "seed": 1790594730,
+      "version": 4,
+      "versionNonce": 1202396406,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "mtn_author",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "mtn_author",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      },
+      "text": "Авторинг Archify",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-mtn_author",
+      "originalText": "Авторинг Archify",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "text-ext_cli",
+      "type": "text",
+      "x": 1165.6479110717773,
+      "y": 22,
+      "width": 88.70417785644531,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "an",
+      "roundness": null,
+      "seed": 881781098,
+      "version": 4,
+      "versionNonce": 836359530,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "ext_cli",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "ext_cli",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      },
+      "text": "CLI Archify",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-ext_cli",
+      "originalText": "CLI Archify",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "text-ui_llm",
+      "type": "text",
+      "x": 38.67991638183594,
+      "y": 182,
+      "width": 92.64016723632812,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "ao",
+      "roundness": null,
+      "seed": 1988242474,
+      "version": 4,
+      "versionNonce": 1365773878,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "ui_llm",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "ui_llm",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      },
+      "text": "Клиент LLM",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-ui_llm",
+      "originalText": "Клиент LLM",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "text-ext_api",
+      "type": "text",
+      "x": 310.3919372558594,
+      "y": 182,
+      "width": 69.21612548828125,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "ap",
+      "roundness": null,
+      "seed": 108992234,
+      "version": 4,
+      "versionNonce": 1670354986,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "ext_api",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "ext_api",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      },
+      "text": "LLM API",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-ext_api",
+      "originalText": "LLM API",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "text-store_fs",
+      "type": "text",
+      "x": 550.0798797607422,
+      "y": 182,
+      "width": 119.84024047851562,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aq",
+      "roundness": null,
+      "seed": 1158719914,
+      "version": 4,
+      "versionNonce": 284481398,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "store_fs",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "store_fs",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      },
+      "text": "Файлы проекта",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-store_fs",
+      "originalText": "Файлы проекта",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "text-ui_canvas",
+      "type": "text",
+      "x": 542.2238540649414,
+      "y": 342,
+      "width": 135.5522918701172,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "ar",
+      "roundness": null,
+      "seed": 1231152234,
+      "version": 4,
+      "versionNonce": 1191117546,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "ui_canvas",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "ui_canvas",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      },
+      "text": "Холст Excalidraw",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-ui_canvas",
+      "originalText": "Холст Excalidraw",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 861537809,
+      "version": 2,
+      "versionNonce": 1855355062,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "edge-ui_chat-ui_llm",
+      "type": "arrow",
+      "x": 85,
+      "y": 68,
+      "width": 0,
+      "height": 88,
+      "angle": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          88
+        ]
+      ],
+      "startBinding": {
+        "elementId": "node-ui_chat",
+        "focus": 0,
+        "gap": 4
+      },
+      "endBinding": {
+        "elementId": "node-ui_llm",
+        "focus": 0,
+        "gap": 4
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "customData": {
+        "edgeLabel": "диалог",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "connection",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      },
+      "index": "as"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 158121318,
+      "version": 2,
+      "versionNonce": 1186141610,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "edge-ui_llm-ext_api",
+      "type": "arrow",
+      "x": 174,
+      "y": 192,
+      "width": 82,
+      "height": 0,
+      "angle": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          82,
+          0
+        ]
+      ],
+      "startBinding": {
+        "elementId": "node-ui_llm",
+        "focus": 0,
+        "gap": 4
+      },
+      "endBinding": {
+        "elementId": "node-ext_api",
+        "focus": 0,
+        "gap": 4
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "customData": {
+        "edgeLabel": "стрим",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "connection",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      },
+      "index": "at"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 655776175,
+      "version": 2,
+      "versionNonce": 32633334,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "edge-ui_chat-ui_bridge",
+      "type": "arrow",
+      "x": 174,
+      "y": 32,
+      "width": 82,
+      "height": 0,
+      "angle": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          82,
+          0
+        ]
+      ],
+      "startBinding": {
+        "elementId": "node-ui_chat",
+        "focus": 0,
+        "gap": 4
+      },
+      "endBinding": {
+        "elementId": "node-ui_bridge",
+        "focus": 0,
+        "gap": 4
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "customData": {
+        "edgeLabel": "команды",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "connection",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      },
+      "index": "au"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1103287529,
+      "version": 2,
+      "versionNonce": 1138151530,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "edge-ui_bridge-mtn_tool",
+      "type": "arrow",
+      "x": 424,
+      "y": 32,
+      "width": 92,
+      "height": 0,
+      "angle": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          92,
+          0
+        ]
+      ],
+      "startBinding": {
+        "elementId": "node-ui_bridge",
+        "focus": 0,
+        "gap": 4
+      },
+      "endBinding": {
+        "elementId": "node-mtn_tool",
+        "focus": 0,
+        "gap": 4
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "customData": {
+        "edgeLabel": "IPC",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "connection",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      },
+      "index": "av"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1681408671,
+      "version": 2,
+      "versionNonce": 638337846,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "edge-mtn_tool-mtn_author",
+      "type": "arrow",
+      "x": 724,
+      "y": 32,
+      "width": 92,
+      "height": 0,
+      "angle": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          92,
+          0
+        ]
+      ],
+      "startBinding": {
+        "elementId": "node-mtn_tool",
+        "focus": 0,
+        "gap": 4
+      },
+      "endBinding": {
+        "elementId": "node-mtn_author",
+        "focus": 0,
+        "gap": 4
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "customData": {
+        "edgeLabel": "author",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "connection",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      },
+      "index": "aw"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 787290890,
+      "version": 2,
+      "versionNonce": 1110782762,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "edge-mtn_author-ext_cli",
+      "type": "arrow",
+      "x": 1024,
+      "y": 32,
+      "width": 92,
+      "height": 0,
+      "angle": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          92,
+          0
+        ]
+      ],
+      "startBinding": {
+        "elementId": "node-mtn_author",
+        "focus": 0,
+        "gap": 4
+      },
+      "endBinding": {
+        "elementId": "node-ext_cli",
+        "focus": 0,
+        "gap": 4
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "customData": {
+        "edgeLabel": "spawn",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "connection",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      },
+      "index": "ax"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 197628308,
+      "version": 2,
+      "versionNonce": 222981238,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "edge-mtn_tool-store_fs",
+      "type": "arrow",
+      "x": 617.75,
+      "y": 68,
+      "width": -5.5,
+      "height": 88,
+      "angle": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -5.5,
+          88
+        ]
+      ],
+      "startBinding": {
+        "elementId": "node-mtn_tool",
+        "focus": 0,
+        "gap": 4
+      },
+      "endBinding": {
+        "elementId": "node-store_fs",
+        "focus": 0,
+        "gap": 4
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "customData": {
+        "edgeLabel": "project.*",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "connection",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      },
+      "index": "ay"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 604739221,
+      "version": 2,
+      "versionNonce": 339295722,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788385515656,
+      "link": null,
+      "locked": false,
+      "id": "edge-ui_bridge-ui_canvas",
+      "type": "arrow",
+      "x": 370.375,
+      "y": 68,
+      "width": 209.25,
+      "height": 248,
+      "angle": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          209.25,
+          248
+        ]
+      ],
+      "startBinding": {
+        "elementId": "node-ui_bridge",
+        "focus": 0,
+        "gap": 4
+      },
+      "endBinding": {
+        "elementId": "node-ui_canvas",
+        "focus": 0,
+        "gap": 4
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "customData": {
+        "edgeLabel": "проекция",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-2655c63a483661a5492bdda8db78f8c2",
+          "diagramType": "architecture",
+          "sourceElementKind": "connection",
+          "skillHash": "89592f55da0b3697b073e92cdaf6dbe020c7f2d0334445eb845b21cf386b6162",
+          "projectSnapshot": "db6784a14262b8e111717e8274f07d65563aa643686c22acf24bd4579d026768"
+        }
+      },
+      "index": "az"
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "gridSize": 20
+  },
+  "files": {}
+}

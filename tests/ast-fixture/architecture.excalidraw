@@ -1,0 +1,912 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "canvas-v2-rebuild",
+  "elements": [
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "seed": 188033866,
+      "version": 2,
+      "versionNonce": 682254519,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788372787255,
+      "link": null,
+      "locked": false,
+      "id": "frame-0-backend",
+      "type": "frame",
+      "x": 198.5,
+      "y": 0,
+      "width": 478.5,
+      "height": 250,
+      "angle": 0,
+      "name": "backend",
+      "customData": {
+        "archifyBoundary": true,
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-19a21b830e870a0925ab04335f31bdf0",
+          "diagramType": "architecture",
+          "sourceElementKind": "boundary",
+          "sourceElementId": "backend",
+          "skillHash": "sha256:ast-fixture",
+          "projectSnapshot": "a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c"
+        }
+      },
+      "index": "Zz"
+    },
+    {
+      "id": "node-web",
+      "type": "rectangle",
+      "x": 0,
+      "y": 30,
+      "width": 162,
+      "height": 60,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a0",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1971026295,
+      "version": 2,
+      "versionNonce": 1713817527,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-web"
+        },
+        {
+          "id": "edge-web-api",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788372787226,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "web",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-19a21b830e870a0925ab04335f31bdf0",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "web",
+          "skillHash": "sha256:ast-fixture",
+          "projectSnapshot": "a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c",
+          "evidenceRefs": [
+            "src/web/app.mjs"
+          ],
+          "astAnchor": {
+            "version": 1,
+            "componentId": "web",
+            "own": [
+              "src/web/app.mjs"
+            ],
+            "dependenciesL1": [
+              {
+                "componentId": "api",
+                "files": [
+                  "src/api/server.mjs"
+                ]
+              }
+            ],
+            "dependenciesL2": [
+              {
+                "componentId": "db",
+                "via": "api",
+                "files": [
+                  "src/db/index.mjs"
+                ]
+              },
+              {
+                "componentId": "log",
+                "via": "api",
+                "files": [
+                  "src/log/index.mjs"
+                ]
+              }
+            ],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      }
+    },
+    {
+      "id": "node-api",
+      "type": "rectangle",
+      "x": 228.5,
+      "y": 30,
+      "width": 185,
+      "height": 60,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-0-backend",
+      "index": "a1",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1294744953,
+      "version": 2,
+      "versionNonce": 173273913,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-api"
+        },
+        {
+          "id": "edge-web-api",
+          "type": "arrow"
+        },
+        {
+          "id": "edge-api-db",
+          "type": "arrow"
+        },
+        {
+          "id": "edge-api-log",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788372787226,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "api",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-19a21b830e870a0925ab04335f31bdf0",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "api",
+          "skillHash": "sha256:ast-fixture",
+          "projectSnapshot": "a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c",
+          "evidenceRefs": [
+            "src/api/server.mjs"
+          ],
+          "astAnchor": {
+            "version": 1,
+            "componentId": "api",
+            "own": [
+              "src/api/server.mjs"
+            ],
+            "dependenciesL1": [
+              {
+                "componentId": "db",
+                "files": [
+                  "src/db/index.mjs"
+                ]
+              },
+              {
+                "componentId": "log",
+                "files": [
+                  "src/log/index.mjs"
+                ]
+              }
+            ],
+            "dependenciesL2": [],
+            "dependentsL1": [
+              {
+                "componentId": "web",
+                "files": [
+                  "src/web/app.mjs"
+                ]
+              }
+            ],
+            "dependentsL2": []
+          }
+        }
+      }
+    },
+    {
+      "id": "node-db",
+      "type": "rectangle",
+      "x": 477.5,
+      "y": 30,
+      "width": 167,
+      "height": 60,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-0-backend",
+      "index": "a2",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 417018519,
+      "version": 2,
+      "versionNonce": 1803729111,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-db"
+        },
+        {
+          "id": "edge-api-db",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788372787226,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "db",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-19a21b830e870a0925ab04335f31bdf0",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "db",
+          "skillHash": "sha256:ast-fixture",
+          "projectSnapshot": "a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c",
+          "evidenceRefs": [
+            "src/db/index.mjs"
+          ],
+          "astAnchor": {
+            "version": 1,
+            "componentId": "db",
+            "own": [
+              "src/db/index.mjs"
+            ],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [
+              {
+                "componentId": "api",
+                "files": [
+                  "src/api/server.mjs"
+                ]
+              }
+            ],
+            "dependentsL2": [
+              {
+                "componentId": "web",
+                "via": "api",
+                "files": [
+                  "src/web/app.mjs"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "node-log",
+      "type": "rectangle",
+      "x": 475,
+      "y": 170,
+      "width": 172,
+      "height": 60,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-0-backend",
+      "index": "a3",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1536697945,
+      "version": 2,
+      "versionNonce": 230892569,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "text-log"
+        },
+        {
+          "id": "edge-api-log",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1788372787226,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "log",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-19a21b830e870a0925ab04335f31bdf0",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "log",
+          "skillHash": "sha256:ast-fixture",
+          "projectSnapshot": "a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c",
+          "evidenceRefs": [
+            "src/log/index.mjs"
+          ],
+          "astAnchor": {
+            "version": 1,
+            "componentId": "log",
+            "own": [
+              "src/log/index.mjs"
+            ],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [
+              {
+                "componentId": "api",
+                "files": [
+                  "src/api/server.mjs"
+                ]
+              }
+            ],
+            "dependentsL2": [
+              {
+                "componentId": "web",
+                "via": "api",
+                "files": [
+                  "src/web/app.mjs"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "text-web",
+      "type": "text",
+      "x": 28.7890625,
+      "y": 40,
+      "width": 104.421875,
+      "height": 40,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a4",
+      "roundness": null,
+      "seed": 2122548727,
+      "version": 3,
+      "versionNonce": 920736375,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788372787252,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "web",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-19a21b830e870a0925ab04335f31bdf0",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "web",
+          "skillHash": "sha256:ast-fixture",
+          "projectSnapshot": "a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c",
+          "evidenceRefs": [
+            "src/web/app.mjs"
+          ],
+          "astAnchor": {
+            "version": 1,
+            "componentId": "web",
+            "own": [
+              "src/web/app.mjs"
+            ],
+            "dependenciesL1": [
+              {
+                "componentId": "api",
+                "files": [
+                  "src/api/server.mjs"
+                ]
+              }
+            ],
+            "dependenciesL2": [
+              {
+                "componentId": "db",
+                "via": "api",
+                "files": [
+                  "src/db/index.mjs"
+                ]
+              },
+              {
+                "componentId": "log",
+                "via": "api",
+                "files": [
+                  "src/log/index.mjs"
+                ]
+              }
+            ],
+            "dependentsL1": [],
+            "dependentsL2": []
+          }
+        }
+      },
+      "text": "Web\nsrc/web/app.mjs",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-web",
+      "originalText": "Web\nsrc/web/app.mjs",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "text-api",
+      "type": "text",
+      "x": 264.79296875,
+      "y": 40,
+      "width": 112.4140625,
+      "height": 40,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-0-backend",
+      "index": "a5",
+      "roundness": null,
+      "seed": 1311616791,
+      "version": 3,
+      "versionNonce": 543978617,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788372787252,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "api",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-19a21b830e870a0925ab04335f31bdf0",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "api",
+          "skillHash": "sha256:ast-fixture",
+          "projectSnapshot": "a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c",
+          "evidenceRefs": [
+            "src/api/server.mjs"
+          ],
+          "astAnchor": {
+            "version": 1,
+            "componentId": "api",
+            "own": [
+              "src/api/server.mjs"
+            ],
+            "dependenciesL1": [
+              {
+                "componentId": "db",
+                "files": [
+                  "src/db/index.mjs"
+                ]
+              },
+              {
+                "componentId": "log",
+                "files": [
+                  "src/log/index.mjs"
+                ]
+              }
+            ],
+            "dependenciesL2": [],
+            "dependentsL1": [
+              {
+                "componentId": "web",
+                "files": [
+                  "src/web/app.mjs"
+                ]
+              }
+            ],
+            "dependentsL2": []
+          }
+        }
+      },
+      "text": "API\nsrc/api/server.mjs",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-api",
+      "originalText": "API\nsrc/api/server.mjs",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "text-db",
+      "type": "text",
+      "x": 507.89453125,
+      "y": 40,
+      "width": 106.2109375,
+      "height": 40,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-0-backend",
+      "index": "a6",
+      "roundness": null,
+      "seed": 888517687,
+      "version": 3,
+      "versionNonce": 1109257111,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788372787252,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "db",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-19a21b830e870a0925ab04335f31bdf0",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "db",
+          "skillHash": "sha256:ast-fixture",
+          "projectSnapshot": "a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c",
+          "evidenceRefs": [
+            "src/db/index.mjs"
+          ],
+          "astAnchor": {
+            "version": 1,
+            "componentId": "db",
+            "own": [
+              "src/db/index.mjs"
+            ],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [
+              {
+                "componentId": "api",
+                "files": [
+                  "src/api/server.mjs"
+                ]
+              }
+            ],
+            "dependentsL2": [
+              {
+                "componentId": "web",
+                "via": "api",
+                "files": [
+                  "src/web/app.mjs"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "text": "DB\nsrc/db/index.mjs",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-db",
+      "originalText": "DB\nsrc/db/index.mjs",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "text-log",
+      "type": "text",
+      "x": 505.671875,
+      "y": 180,
+      "width": 110.65625,
+      "height": 40,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": "frame-0-backend",
+      "index": "a7",
+      "roundness": null,
+      "seed": 1254102359,
+      "version": 3,
+      "versionNonce": 1740209497,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788372787252,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "projectNodeId": "log",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-19a21b830e870a0925ab04335f31bdf0",
+          "diagramType": "architecture",
+          "sourceElementKind": "component",
+          "sourceElementId": "log",
+          "skillHash": "sha256:ast-fixture",
+          "projectSnapshot": "a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c",
+          "evidenceRefs": [
+            "src/log/index.mjs"
+          ],
+          "astAnchor": {
+            "version": 1,
+            "componentId": "log",
+            "own": [
+              "src/log/index.mjs"
+            ],
+            "dependenciesL1": [],
+            "dependenciesL2": [],
+            "dependentsL1": [
+              {
+                "componentId": "api",
+                "files": [
+                  "src/api/server.mjs"
+                ]
+              }
+            ],
+            "dependentsL2": [
+              {
+                "componentId": "web",
+                "via": "api",
+                "files": [
+                  "src/web/app.mjs"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "text": "Log\nsrc/log/index.mjs",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "node-log",
+      "originalText": "Log\nsrc/log/index.mjs",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 584182017,
+      "version": 2,
+      "versionNonce": 1446144569,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788372787255,
+      "link": null,
+      "locked": false,
+      "id": "edge-web-api",
+      "type": "arrow",
+      "x": 166,
+      "y": 60,
+      "width": 58.5,
+      "height": 0,
+      "angle": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          58.5,
+          0
+        ]
+      ],
+      "startBinding": {
+        "elementId": "node-web",
+        "focus": 0,
+        "gap": 4
+      },
+      "endBinding": {
+        "elementId": "node-api",
+        "focus": 0,
+        "gap": 4
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "customData": {
+        "edgeLabel": "HTTP",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-19a21b830e870a0925ab04335f31bdf0",
+          "diagramType": "architecture",
+          "sourceElementKind": "connection",
+          "sourceElementId": "web-api",
+          "skillHash": "sha256:ast-fixture",
+          "projectSnapshot": "a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c"
+        }
+      },
+      "index": "a8"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 764877502,
+      "version": 2,
+      "versionNonce": 741028311,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788372787255,
+      "link": null,
+      "locked": false,
+      "id": "edge-api-db",
+      "type": "arrow",
+      "x": 417.5,
+      "y": 60,
+      "width": 56,
+      "height": 0,
+      "angle": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          56,
+          0
+        ]
+      ],
+      "startBinding": {
+        "elementId": "node-api",
+        "focus": 0,
+        "gap": 4
+      },
+      "endBinding": {
+        "elementId": "node-db",
+        "focus": 0,
+        "gap": 4
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "customData": {
+        "edgeLabel": "SQL",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-19a21b830e870a0925ab04335f31bdf0",
+          "diagramType": "architecture",
+          "sourceElementKind": "connection",
+          "sourceElementId": "api-db",
+          "skillHash": "sha256:ast-fixture",
+          "projectSnapshot": "a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c"
+        }
+      },
+      "index": "a9"
+    },
+    {
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 17655002,
+      "version": 2,
+      "versionNonce": 1689959193,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1788372787255,
+      "link": null,
+      "locked": false,
+      "id": "edge-api-log",
+      "type": "arrow",
+      "x": 379.2857142857143,
+      "y": 94,
+      "width": 123.42857142857144,
+      "height": 72,
+      "angle": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          123.42857142857144,
+          72
+        ]
+      ],
+      "startBinding": {
+        "elementId": "node-api",
+        "focus": 0,
+        "gap": 4
+      },
+      "endBinding": {
+        "elementId": "node-log",
+        "focus": 0,
+        "gap": 4
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "customData": {
+        "edgeLabel": "LOG",
+        "archify": {
+          "version": 1,
+          "projectionId": "proj-19a21b830e870a0925ab04335f31bdf0",
+          "diagramType": "architecture",
+          "sourceElementKind": "connection",
+          "sourceElementId": "api-log",
+          "skillHash": "sha256:ast-fixture",
+          "projectSnapshot": "a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c"
+        }
+      },
+      "index": "aA"
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "gridSize": 20
+  },
+  "files": {}
+}

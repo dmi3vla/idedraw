@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Архитектура Canvas v2 Rebuild",
+    "quality_profile": "showcase",
+    "viewBox": [1160, 620],
+    "views": [
+      {
+        "id": "chat-to-canvas",
+        "label": "Командный поток Chat → Canvas",
+        "focus": ["chat_panel", "llm_client", "bridge_layer", "command_engine", "canvas_adapter", "canvas_island"],
+        "note": "Поток команды от интерфейса чата через шину Bridge к обновлению холста Excalidraw."
+      },
+      {
+        "id": "context-and-project",
+        "label": "Контекст и граф проекта",
+        "focus": ["canvas_island", "canvas_adapter", "context_store", "bridge_layer", "project_store"],
+        "note": "Обратная связь по выделению элементов и обращение к независимому графу проекта."
+      },
+      {
+        "id": "lifecycle-host",
+        "label": "Инициализация и тема",
+        "focus": ["main_process", "composition_root", "theme_store", "chat_panel", "canvas_island"],
+        "note": "Главный процесс Electron, точка композиции и единый pub/sub Theme Store."
+      }
+    ]
+  },
+  "components": [
+    { "id": "main_process", "type": "external", "label": "Electron Main", "sublabel": "main.mjs", "pos": [40, 60], "size": [150, 64] },
+    { "id": "composition_root", "type": "frontend", "label": "Composition Root", "sublabel": "renderer-entry.jsx", "pos": [260, 60], "size": [160, 64] },
+    { "id": "theme_store", "type": "backend", "label": "Theme Store", "sublabel": "theme.mjs", "pos": [490, 60], "size": [150, 64] },
+    { "id": "chat_panel", "type": "frontend", "label": "Chat UI Panel", "sublabel": "chat-panel.mjs", "pos": [40, 240], "size": [150, 64] },
+    { "id": "llm_client", "type": "backend", "label": "LLM Seam / Stub", "sublabel": "llm-client.mjs", "pos": [260, 240], "size": [160, 64], "tag": "Intent Parser" },
+    { "id": "bridge_layer", "type": "messagebus", "label": "Bridge Facade", "sublabel": "bridge.mjs", "pos": [490, 240], "size": [150, 64], "tag": "Protocol" },
+    { "id": "command_engine", "type": "backend", "label": "Command Engine", "sublabel": "command-registry.mjs", "pos": [720, 240], "size": [160, 64] },
+    { "id": "canvas_adapter", "type": "backend", "label": "Canvas Adapter", "sublabel": "adapter.mjs", "pos": [950, 240], "size": [150, 64] },
+    { "id": "project_store", "type": "database", "label": "Project Store", "sublabel": "project-store.mjs", "pos": [490, 430], "size": [150, 64] },
+    { "id": "context_store", "type": "messagebus", "label": "Context Store", "sublabel": "context-store.mjs", "pos": [720, 430], "size": [160, 64] },
+    { "id": "canvas_island", "type": "frontend", "label": "Excalidraw Island", "sublabel": "mount.jsx", "brand": "react", "pos": [950, 430], "size": [150, 64] }
+  ],
+  "boundaries": [
+    { "kind": "region", "label": "Host & Lifecycle", "wraps": ["main_process", "composition_root", "theme_store"] },
+    { "kind": "region", "label": "Chat Subsystem (Изолированный UI)", "wraps": ["chat_panel", "llm_client"] },
+    { "kind": "region", "label": "Bridge Protocol (Шина взаимодействия)", "wraps": ["bridge_layer", "command_engine", "context_store"] },
+    { "kind": "region", "label": "Canvas Runtime (Excalidraw)", "wraps": ["canvas_adapter", "canvas_island"] }
+  ],
+  "connections": [
+    { "id": "main-to-root", "from": "main_process", "to": "composition_root", "label": "loadURL" },
+    { "id": "root-to-theme", "from": "composition_root", "to": "theme_store", "label": "applyTheme" },
+    { "id": "chat-to-llm", "from": "chat_panel", "to": "llm_client", "label": "sendMessage", "variant": "emphasis" },
+    { "id": "llm-to-bridge", "from": "llm_client", "to": "bridge_layer", "label": "use_command", "variant": "emphasis" },
+    { "id": "bridge-to-engine", "from": "bridge_layer", "to": "command_engine", "label": "dispatch" },
+    { "id": "engine-to-adapter", "from": "command_engine", "to": "canvas_adapter", "label": "мутации", "variant": "emphasis" },
+    { "id": "bridge-to-project", "from": "bridge_layer", "to": "project_store", "label": "граф / линки", "fromSide": "bottom", "toSide": "top", "labelDy": 24 },
+    { "id": "adapter-to-island", "from": "canvas_adapter", "to": "canvas_island", "label": "updateScene", "fromSide": "bottom", "toSide": "top", "labelDy": 24 },
+    { "id": "island-to-context", "from": "canvas_island", "to": "context_store", "label": "выделение", "variant": "dashed" },
+    { "id": "context-to-bridge", "from": "context_store", "to": "bridge_layer", "label": "onContextChange", "variant": "dashed" }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Архитектурная изоляция",
+      "items": [
+        "Chat никогда не импортирует canvas/* или Excalidraw напрямую",
+        "Canvas никогда не импортирует chat/*",
+        "Взаимодействие строго через bridge.mjs (commands, queries, selection)"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Связь с проектом",
+      "items": [
+        "Холст по умолчанию отвязан от проекта (свободный набросок)",
+        "Явная и обратимая привязка через canvas.linkProject / unlinkProject",
+        "Запросы к графу проекта работают даже без смонтированного холста"
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "Единая тема и режимы",
+      "items": [
+        "Theme Store изолирован и управляет переменными CSS на documentElement",
+        "Поддержка режимов запуска: full, chat-only, canvas-only",
+        "Интеграция с реальным пакетом @excalidraw/excalidraw без моков"
+      ]
+    }
+  ]
+}

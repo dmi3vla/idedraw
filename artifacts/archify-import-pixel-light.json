@@ -1,0 +1,253 @@
+{
+  "theme": "light",
+  "layoutSafety": {
+    "overlapCount": 0,
+    "minimumRowGap": 44,
+    "rowPairs": [
+      {
+        "left": "main_process",
+        "right": "composition_root",
+        "gap": 55
+      },
+      {
+        "left": "composition_root",
+        "right": "theme_store",
+        "gap": 55
+      },
+      {
+        "left": "chat_panel",
+        "right": "llm_client",
+        "gap": 67.5
+      },
+      {
+        "left": "llm_client",
+        "right": "bridge_layer",
+        "gap": 68
+      },
+      {
+        "left": "bridge_layer",
+        "right": "command_engine",
+        "gap": 58
+      },
+      {
+        "left": "command_engine",
+        "right": "canvas_adapter",
+        "gap": 44
+      },
+      {
+        "left": "project_store",
+        "right": "context_store",
+        "gap": 54
+      },
+      {
+        "left": "context_store",
+        "right": "canvas_island",
+        "gap": 47.5
+      }
+    ]
+  },
+  "ok": true,
+  "overflow": [],
+  "nullExtent": [],
+  "per": [
+    {
+      "id": "main_process",
+      "rectW": 150,
+      "rectDev": [
+        40,
+        130,
+        220,
+        206
+      ],
+      "roiL": 50,
+      "roiR": 210,
+      "lPad": 16,
+      "rPad": 17,
+      "extentL": 66,
+      "extentR": 192,
+      "inkInside": 1055
+    },
+    {
+      "id": "composition_root",
+      "rectW": 190,
+      "rectDev": [
+        286,
+        130,
+        514,
+        206
+      ],
+      "roiL": 296,
+      "roiR": 504,
+      "lPad": 24,
+      "rPad": 24,
+      "extentL": 320,
+      "extentR": 479,
+      "inkInside": 1741
+    },
+    {
+      "id": "theme_store",
+      "rectW": 150,
+      "rectDev": [
+        580,
+        130,
+        760,
+        206
+      ],
+      "roiL": 590,
+      "roiR": 750,
+      "lPad": 21,
+      "rPad": 22,
+      "extentL": 611,
+      "extentR": 727,
+      "inkInside": 1108
+    },
+    {
+      "id": "chat_panel",
+      "rectW": 151,
+      "rectDev": [
+        40,
+        346,
+        221,
+        422
+      ],
+      "roiL": 50,
+      "roiR": 211,
+      "lPad": 14,
+      "rPad": 16,
+      "extentL": 64,
+      "extentR": 194,
+      "inkInside": 1283
+    },
+    {
+      "id": "llm_client",
+      "rectW": 164,
+      "rectDev": [
+        302,
+        346,
+        499,
+        422
+      ],
+      "roiL": 312,
+      "roiR": 489,
+      "lPad": 9,
+      "rPad": 11,
+      "extentL": 321,
+      "extentR": 477,
+      "inkInside": 1351
+    },
+    {
+      "id": "bridge_layer",
+      "rectW": 150,
+      "rectDev": [
+        580,
+        346,
+        760,
+        422
+      ],
+      "roiL": 590,
+      "roiR": 750,
+      "lPad": 15,
+      "rPad": 15,
+      "extentL": 605,
+      "extentR": 734,
+      "inkInside": 1298
+    },
+    {
+      "id": "command_engine",
+      "rectW": 204,
+      "rectDev": [
+        830,
+        346,
+        1075,
+        422
+      ],
+      "roiL": 840,
+      "roiR": 1065,
+      "lPad": 16,
+      "rPad": 18,
+      "extentL": 856,
+      "extentR": 1046,
+      "inkInside": 1791
+    },
+    {
+      "id": "canvas_adapter",
+      "rectW": 158,
+      "rectDev": [
+        1127,
+        346,
+        1317,
+        422
+      ],
+      "roiL": 1137,
+      "roiR": 1307,
+      "lPad": 14,
+      "rPad": 14,
+      "extentL": 1151,
+      "extentR": 1292,
+      "inkInside": 1368
+    },
+    {
+      "id": "project_store",
+      "rectW": 181,
+      "rectDev": [
+        562,
+        574,
+        779,
+        650
+      ],
+      "roiL": 572,
+      "roiR": 769,
+      "lPad": 24,
+      "rPad": 25,
+      "extentL": 596,
+      "extentR": 743,
+      "inkInside": 1534
+    },
+    {
+      "id": "context_store",
+      "rectW": 181,
+      "rectDev": [
+        844,
+        574,
+        1061,
+        650
+      ],
+      "roiL": 854,
+      "roiR": 1051,
+      "lPad": 22,
+      "rPad": 24,
+      "extentL": 876,
+      "extentR": 1026,
+      "inkInside": 1520
+    },
+    {
+      "id": "canvas_island",
+      "rectW": 174,
+      "rectDev": [
+        1118,
+        574,
+        1327,
+        650
+      ],
+      "roiL": 1128,
+      "roiR": 1317,
+      "lPad": 15,
+      "rPad": 16,
+      "extentL": 1143,
+      "extentR": 1300,
+      "inkInside": 1277
+    }
+  ],
+  "fontProbe": {
+    "virgilLoaded": true,
+    "assistantLoaded": true,
+    "excalifontLoaded": false,
+    "widths": {
+      "Virgil": 120.7,
+      "Assistant": 118.4,
+      "Excalifont": 116,
+      "Helvetica": 128.1
+    }
+  },
+  "dpr": 1
+}

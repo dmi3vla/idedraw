@@ -1,0 +1,559 @@
+:root {
+  /* Dark is the default theme (see theme.mjs `current = 'dark'`); declare it
+     here too so the pre-hydration frame doesn't flash light. */
+  color-scheme: dark light;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  /* Fallbacks match the DARK palette on purpose: they are only used in the
+     frame before applyThemeVars() sets the custom properties. */
+  background: var(--bg, #121212);
+  color: var(--fg, #e8e8e8);
+}
+
+#app {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+#canvas-root {
+  flex: 1 1 auto;
+  min-width: 0;
+  position: relative;
+}
+
+/* Excalidraw's main-menu (hamburger) sits at the canvas top-left, right under
+   our fixed toolbar strip — after the native title bar was removed they
+   overlap (toolbar bottom edge is y=32, hamburger base position is y=16).
+   Push only the left menu column below our toolbar; the centered shape tools
+   stay where they are.
+   History of this number, because "no overlap" was not the same as "looks
+   separate": 28px gave a 12px gap and still read as touching; 46px put the
+   hamburger at y=62 with a 30px gap, geometrically clear but still visually
+   crowded under the Theme button. Measured DOM geometry at 72px: hamburger
+   y=88 — 56px below our toolbar (bottom y=32) and 28px below the centered
+   tool island (bottom y=60), so it reads as its own row. */
+.excalidraw .App-menu_top > .App-menu_top__left {
+  margin-top: 72px;
+}
+
+/* --- Frameless window controls ------------------------------------------- */
+
+.window-controls {
+  position: fixed;
+  /* One horizontal level with the Library button and the Chat button: the
+     window controls (30px tall) are vertically centered on the Library row
+     (center y=34) instead of floating at the very top. */
+  top: 19px;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  -webkit-app-region: drag;
+}
+.win-btn {
+  width: 38px;
+  height: 30px;
+  border: none;
+  background: var(--bg-panel, #f7f7f8);
+  color: var(--fg, #1e1e1e);
+  font-size: 11px;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}
+.win-btn + .win-btn { border-left: 1px solid var(--border, #e0e0e0); }
+.win-btn:hover { background: var(--bubble-tool, #eef0fb); }
+.win-close:hover { background: #e81123; color: #fff; }
+
+#chat-root {
+  flex: 0 0 340px;
+  border-left: 1px solid var(--border, #e0e0e0);
+  background: var(--bg-panel, #f7f7f8);
+  display: flex;
+  flex-direction: column;
+}
+
+/* S6 AST workspace overlay. It covers the application work area instead of
+   shrinking Excalidraw into a narrow split pane. Excalidraw remains mounted
+   underneath (and therefore remains the scene owner); closing the overlay
+   restores the same canvas and viewport. Window controls stay above it. */
+#ast-root {
+  /* AST has no independent palette. These aliases intentionally point at the
+     shared theme store used by the main Excalidraw window, so a Theme change
+     updates the overlay, cards and editor in the same frame. */
+  --ast-bg: var(--bg);
+  --ast-fg: var(--fg);
+  --ast-muted: var(--fg-muted);
+  --ast-border: var(--border);
+  --ast-accent: var(--accent);
+  --ast-error: #e56458;
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  min-width: 0;
+  background: var(--bg, #121212);
+  display: none;
+  overflow: hidden;
+}
+:root[data-theme='light'] #ast-root { color-scheme: light; }
+:root[data-theme='dark'] #ast-root { color-scheme: dark; }
+#ast-root.ast-open { display: flex; }
+#ast-root .ast-dock { width: 100%; height: 100%; }
+
+.toolbar {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 20;
+  display: flex;
+  gap: 6px;
+  /* Frameless window: the toolbar strip doubles as a drag handle. */
+  -webkit-app-region: drag;
+}
+.toolbar button {
+  border: 1px solid var(--border, #e0e0e0);
+  background: var(--bg-panel, #f7f7f8);
+  color: var(--fg, #1e1e1e);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}
+.toolbar button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Chat toggle button — right-hand row, on the SAME horizontal level as the
+   Library button and the window controls (Library, Chat, min/max/close), to
+   the right of Library and to the left of the window controls. */
+.chat-toggle {
+  position: fixed;
+  top: 22px;
+  right: 122px;
+  z-index: 20;
+  border: 1px solid var(--border, #e0e0e0);
+  background: var(--bg-panel, #f7f7f8);
+  color: var(--fg, #1e1e1e);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}
+.chat-toggle:hover { background: var(--bubble-tool, #eef0fb); }
+
+/* Excalidraw's own Library button sits flush against the right edge of its
+   top-right island; that leaves no room for the Chat button and window controls
+   on its right. Shift the whole Library control left so the three groups can
+   line up in one row (Library | Chat | min/max/close). */
+.excalidraw .sidebar-trigger__label-element {
+  transform: translateX(-161px);
+}
+.archify-status {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  -webkit-app-region: no-drag;
+  align-self: center;
+}
+.archify-status-muted { color: var(--fg-muted, #6b6b6b); }
+.archify-status-ok { color: var(--accent, #4a63e7); background: var(--bubble-tool, #eef0fb); }
+.archify-status-err { color: #c02626; background: #fdecec; }
+
+.chat-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border, #e0e0e0);
+  /* Frameless window: header is a drag handle; keep its right edge clear of
+     the fixed window-controls cluster (3 × 38px = 114px). */
+  -webkit-app-region: drag;
+  padding-right: 122px;
+}
+.chat-title { font-weight: 600; font-size: 14px; color: var(--fg); }
+.chat-badge {
+  font-size: 11px;
+  color: var(--accent, #4a63e7);
+  background: var(--bubble-tool, #eef0fb);
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+.chat-gear {
+  border: none;
+  background: transparent;
+  color: var(--fg-muted, #6b6b6b);
+  font-size: 15px;
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 6px;
+  -webkit-app-region: no-drag;
+}
+.chat-gear:hover { color: var(--fg); background: var(--bubble-tool, #eef0fb); }
+.chat-close:hover { color: #c02626; background: #fdecec; }
+
+.chat-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 10px 14px 0;
+  padding: 10px 12px;
+  border: 1px solid var(--border, #e0e0e0);
+  border-radius: 8px;
+  background: var(--bubble-tool, #eef0fb);
+}
+.chat-banner-text { font-size: 12px; color: var(--fg); line-height: 1.4; }
+.chat-banner-btn {
+  align-self: flex-start;
+  border: none;
+  background: var(--accent, #4a63e7);
+  color: var(--bubble-user-fg, #fff);
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.chat-settings {
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* Top padding clears the fixed window-controls cluster (30px tall). */
+  padding: 40px 14px 14px;
+  background: var(--bg-panel, #f7f7f8);
+  overflow-y: auto;
+}
+#chat-root { position: relative; }
+.chat-settings-top { display: flex; align-items: center; gap: 8px; }
+.chat-back {
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--border, #e0e0e0);
+  background: transparent;
+  color: var(--fg, #1e1e1e);
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 6px;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}
+.chat-back:hover { background: var(--bubble-tool, #eef0fb); }
+.chat-settings-title { font-weight: 600; font-size: 14px; color: var(--fg); }
+.chat-field { display: flex; flex-direction: column; gap: 4px; }
+.chat-field-label { font-size: 12px; color: var(--fg-muted, #6b6b6b); }
+.chat-field input {
+  border: 1px solid var(--border, #e0e0e0);
+  border-radius: 6px;
+  padding: 7px 9px;
+  font-size: 13px;
+  background: var(--bg, #fff);
+  color: var(--fg);
+}
+.chat-field-hint { font-size: 11px; color: var(--fg-muted, #6b6b6b); }
+.chat-settings-status { font-size: 12px; min-height: 16px; line-height: 1.35; }
+.chat-status-ok { color: #2e7d32; }
+.chat-status-err { color: #c62828; }
+.chat-status-muted { color: var(--fg-muted, #6b6b6b); }
+.chat-settings-buttons { display: flex; gap: 6px; margin-top: auto; flex-wrap: wrap; }
+.chat-btn {
+  border: 1px solid var(--border, #e0e0e0);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.chat-btn-primary {
+  border: none;
+  background: var(--accent, #4a63e7);
+  color: var(--bubble-user-fg, #fff);
+}
+.chat-btn-secondary {
+  background: var(--bg, #fff);
+  color: var(--fg);
+}
+
+/* --- Settings tabs: Provider | Skills --------------------------------- */
+.chat-settings-tabs {
+  display: flex;
+  gap: 6px;
+  border-bottom: 1px solid var(--border, #e0e0e0);
+  padding-bottom: 8px;
+}
+.chat-tab {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: var(--fg-muted, #6b6b6b);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}
+.chat-tab:hover { color: var(--fg); background: var(--bubble-tool, #eef0fb); }
+.chat-tab-active { color: var(--accent, #4a63e7); background: var(--bubble-tool, #eef0fb); }
+.chat-pane { display: flex; flex-direction: column; gap: 10px; }
+
+/* --- Skills list-detail ---------------------------------------------- */
+.chat-skills-header { display: flex; align-items: center; justify-content: space-between; }
+.chat-skills-title { font-weight: 600; font-size: 13px; color: var(--fg); }
+.chat-skills-list { display: flex; flex-direction: column; gap: 6px; }
+.chat-skills-empty { font-size: 12px; color: var(--fg-muted, #6b6b6b); line-height: 1.4; padding: 8px 0; }
+.chat-skill-row {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 8px 10px;
+  border: 1px solid var(--border, #e0e0e0);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.chat-skill-row:hover { background: var(--bubble-tool, #eef0fb); }
+.chat-skill-row input[type="checkbox"] { margin-top: 2px; }
+.chat-skill-body { flex: 1; }
+.chat-skill-name { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: var(--fg); }
+.chat-skill-status {
+  font-size: 10px;
+  padding: 1px 6px;
+  border-radius: 8px;
+  color: var(--fg-muted, #6b6b6b);
+  background: var(--bg, #fff);
+  border: 1px solid var(--border, #e0e0e0);
+}
+.chat-skill-status-ready { color: #2e7d32; border-color: #cfe7cf; }
+.chat-skill-status-changed { color: #b26a00; border-color: #f0d9b8; }
+.chat-skill-status-missing { color: #a12626; border-color: #eccaca; }
+.chat-skill-status-invalid { color: #a12626; border-color: #eccaca; }
+.chat-skill-meta { font-size: 11px; color: var(--fg-muted, #6b6b6b); margin-top: 2px; }
+
+.chat-skills-details { display: flex; flex-direction: column; gap: 6px; margin-top: 4px; padding: 10px; border: 1px solid var(--border, #e0e0e0); border-radius: 8px; }
+.chat-skills-details-title { font-size: 14px; font-weight: 600; color: var(--fg); }
+.chat-skills-detail { display: flex; justify-content: space-between; gap: 10px; font-size: 12px; }
+.chat-skills-detail-key { color: var(--fg-muted, #6b6b6b); white-space: nowrap; }
+.chat-skills-detail-val { color: var(--fg); word-break: break-all; text-align: right; }
+.chat-skills-detail-toggle { display: flex; align-items: center; gap: 8px; }
+.chat-skills-actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+
+.chat-context {
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--border, #e0e0e0);
+}
+.chat-context-line { font-size: 12px; color: var(--fg); }
+.chat-context-muted { color: var(--fg-muted, #6b6b6b); margin-top: 2px; }
+
+.chat-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 8px 14px 0;
+}
+.chat-chip {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  border: 1px solid var(--border, #e0e0e0);
+  color: var(--fg-muted, #6b6b6b);
+  background: var(--bg, #fff);
+}
+.chat-chip-skill {
+  color: var(--accent, #4a63e7);
+  border-color: var(--accent, #4a63e7);
+  background: var(--bubble-tool, #eef0fb);
+}
+
+.chat-messages {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chat-msg {
+  max-width: 90%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+.chat-msg-user {
+  align-self: flex-end;
+  background: var(--bubble-user, #4a63e7);
+  color: var(--bubble-user-fg, #fff);
+}
+.chat-msg-assistant {
+  align-self: flex-start;
+  background: var(--bg, #fff);
+  border: 1px solid var(--border, #e0e0e0);
+  color: var(--fg);
+}
+
+.chat-tool {
+  align-self: flex-start;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: var(--bubble-tool, #eef0fb);
+  color: var(--bubble-tool-fg, #33395c);
+}
+.chat-tool-name { font-family: monospace; }
+.chat-tool-err { background: #fdeaea; color: #a12626; }
+.chat-tool-pending { opacity: 0.8; }
+
+.chat-composer {
+  display: flex;
+  gap: 6px;
+  padding: 10px 12px;
+  border-top: 1px solid var(--border, #e0e0e0);
+}
+.chat-composer textarea {
+  flex: 1;
+  resize: none;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid var(--border, #e0e0e0);
+  padding: 8px;
+  font-size: 13px;
+  background: var(--bg, #fff);
+  color: var(--fg);
+}
+.chat-send {
+  border: none;
+  background: var(--accent, #4a63e7);
+  color: #fff;
+  border-radius: 8px;
+  width: 40px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+/* --- S6 controlled projection preview ----------------------------------- */
+.projection-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.48);
+  backdrop-filter: blur(2px);
+}
+.projection-dialog {
+  width: min(520px, calc(100vw - 32px));
+  max-height: min(720px, calc(100vh - 48px));
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 24px;
+  border: 1px solid var(--border, #e6e5e3);
+  border-radius: 12px;
+  background: var(--bg-panel, #fff);
+  color: var(--fg, #2c2c2b);
+  box-shadow: 0 1px 2px rgba(0,0,0,.08), 0 12px 32px rgba(0,0,0,.18);
+}
+.projection-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+.projection-header h2 { margin: 4px 0 0; font-size: 22px; line-height: 1.25; }
+.projection-eyebrow { color: var(--accent, #2783de); font-size: 11px; font-weight: 700; letter-spacing: .12em; }
+.projection-icon-btn { width: 44px; height: 44px; border: 0; border-radius: 8px; background: transparent; color: var(--fg-muted); font-size: 24px; cursor: pointer; }
+.projection-icon-btn:hover { background: var(--bubble-tool); color: var(--fg); }
+.projection-summary { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 20px; }
+.projection-summary > div { min-width: 0; padding: 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); }
+.projection-summary strong { display: block; font-size: 20px; line-height: 1.1; }
+.projection-summary span { display: block; margin-top: 5px; color: var(--fg-muted); font-size: 11px; line-height: 1.25; }
+.projection-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 0 20px; margin: 0; }
+.projection-meta > div { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.projection-meta dt { color: var(--fg-muted); font-size: 12px; }
+.projection-meta dd { margin: 0; max-width: 58%; overflow: hidden; text-overflow: ellipsis; text-align: right; font-size: 12px; white-space: nowrap; }
+.projection-mono { font-family: Menlo, Consolas, monospace; }
+.projection-warnings { margin-top: 16px; padding: 12px 14px; border: 1px solid rgba(213,128,59,.45); border-radius: 8px; background: rgba(213,128,59,.10); font-size: 12px; line-height: 1.45; }
+.projection-warnings ul { margin: 6px 0 0; padding-left: 18px; }
+.projection-actions { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+.projection-btn { min-height: 44px; padding: 0 16px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.projection-btn:disabled { opacity: .55; cursor: wait; }
+.projection-btn-primary { border: 1px solid var(--accent, #2783de); background: var(--accent, #2783de); color: #fff; }
+.projection-btn-secondary { border: 1px solid var(--border); background: var(--bg); color: var(--fg); }
+.projection-btn:focus-visible, .projection-icon-btn:focus-visible { outline: 3px solid color-mix(in srgb, var(--accent) 35%, transparent); outline-offset: 2px; }
+.projection-receipt { padding: 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); }
+.projection-receipt-title { margin-bottom: 10px; color: #46a171; font-size: 16px; font-weight: 700; }
+.projection-receipt-failed .projection-receipt-title, .projection-receipt-stale .projection-receipt-title { color: #e56458; }
+.projection-receipt-cancelled .projection-receipt-title { color: var(--fg-muted); }
+.projection-error { margin-bottom: 10px; color: #e56458; font-size: 12px; line-height: 1.4; }
+@media (max-width: 600px) {
+  .projection-backdrop { padding: 16px; }
+  .projection-dialog { padding: 20px; }
+  .projection-summary { grid-template-columns: 1fr 1fr; }
+  .projection-meta { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .projection-backdrop { backdrop-filter: none; }
+}
+
+/* --- Один чат + scope-чип -------------------------------------------- */
+#chat-root,
+.chat-panel {
+  --chat-surface: var(--island-bg-color, var(--bg-panel, #f7f7f8));
+  --chat-border: var(--default-border-color, var(--border, #e0e0e0));
+  --chat-primary: var(--color-primary, var(--accent, #6965db));
+  --chat-selected: var(--color-primary-light, rgba(105, 101, 219, 0.15));
+  --chat-radius: var(--border-radius-lg, 10px);
+}
+.chat-scope {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border-top: 1px solid var(--chat-border);
+  font-size: 11px;
+  min-height: 28px;
+}
+.chat-scope-muted { color: var(--fg-muted, #9a9a9a); }
+.chat-chip-scope {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: 1px solid var(--chat-primary);
+  border-radius: var(--chat-radius);
+  background: var(--chat-selected);
+  color: inherit;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+.chat-scope-reset {
+  border: 1px solid var(--chat-border);
+  border-radius: var(--chat-radius);
+  background: transparent;
+  color: inherit;
+  line-height: 1;
+  padding: 3px 6px;
+  cursor: pointer;
+}
+.chat-scope-reset:hover { background: var(--button-hover-bg, rgba(0, 0, 0, 0.07)); }
+/* Строка «агент показывает…» — служебная, не пузырь сообщения. */
+.chat-reveal {
+  margin: 4px 0;
+  padding: 3px 8px;
+  font-size: 11px;
+  color: var(--chat-primary);
+  border-left: 2px solid var(--chat-primary);
+}

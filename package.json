@@ -1,0 +1,29 @@
+{
+  "name": "canvas-v2-rebuild",
+  "version": "1.0.0",
+  "description": "Independent canvas (Excalidraw) + independent chat, bridged, project-aware, light/dark themed",
+  "type": "module",
+  "main": "main.mjs",
+  "scripts": {
+    "build": "node build.mjs",
+    "start": "electron . --no-sandbox",
+    "test": "node --test \"tests/*.test.mjs\"",
+    "test:protocol": "node smoke-test.mjs",
+    "verify:source": "node smoke-test.mjs --source && npm test",
+    "verify:clean": "npm run build && node smoke-test.mjs && npm test",
+    "verify:visual": "node run-visual-proof.mjs && node run-pixel-proof.mjs",
+    "verify:pixel": "node run-pixel-proof.mjs",
+    "verify:ui": "node run-ui-proof.mjs",
+    "verify:saved-chat": "node run-saved-chat-generation-proof.mjs",
+    "verify:stress": "node run-stress-proof.mjs",
+    "verify:ast-anchor": "node run-ast-anchor-proof.mjs"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@excalidraw/excalidraw": "^0.18.1",
+    "electron": "^44.0.0",
+    "esbuild": "^0.28.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "spec": "canvas-v2-architecture.json",
+  "importResult": {
+    "components": 11,
+    "connections": 10,
+    "boundaries": 4,
+    "excalidrawElements": 36,
+    "mode": "replace",
+    "projectionId": "proj-ffcf1b2a5c7c7e8fdf83375e51d38345",
+    "sourceHash": "621d41016b245f1cb7ad998f12be8f8fe6fe6a39f4d0161828464a6b74263580",
+    "elementIdsToDelete": [],
+    "applied": true,
+    "provenanceApplied": true,
+    "warnings": [],
+    "unconverted": {
+      "cards": 3,
+      "views": 3
+    },
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1132.5,
+      "height": 484
+    }
+  },
+  "counts": {
+    "frames": 4,
+    "nodes": 11,
+    "arrows": 10,
+    "sublabels": 11,
+    "elements": 36
+  },
+  "expected": {
+    "frames": 4,
+    "nodes": 11,
+    "arrows": 10
+  },
+  "frameNames": [
+    "Host & Lifecycle",
+    "Chat Subsystem (Изолированный UI)",
+    "Bridge Protocol (Шина взаимодействия)",
+    "Canvas Runtime (Excalidraw)"
+  ],
+  "nativeFrameType": true,
+  "misplaced": [],
+  "membershipBroken": [],
+  "layoutSafety": {
+    "overlapCount": 0,
+    "minimumRowGap": 44,
+    "rowPairs": [
+      {
+        "left": "main_process",
+        "right": "composition_root",
+        "gap": 55
+      },
+      {
+        "left": "composition_root",
+        "right": "theme_store",
+        "gap": 55
+      },
+      {
+        "left": "chat_panel",
+        "right": "llm_client",
+        "gap": 67.5
+      },
+      {
+        "left": "llm_client",
+        "right": "bridge_layer",
+        "gap": 68
+      },
+      {
+        "left": "bridge_layer",
+        "right": "command_engine",
+        "gap": 58
+      },
+      {
+        "left": "command_engine",
+        "right": "canvas_adapter",
+        "gap": 44
+      },
+      {
+        "left": "project_store",
+        "right": "context_store",
+        "gap": 54
+      },
+      {
+        "left": "context_store",
+        "right": "canvas_island",
+        "gap": 47.5
+      }
+    ]
+  },
+  "labelProbe": [],
+  "fitProbe": [
+    {
+      "id": "main_process",
+      "rectW": 150,
+      "textW": 92,
+      "rectH": 64,
+      "textH": 40,
+      "textLines": 2,
+      "rectX": 30.5,
+      "textX": 59.5,
+      "overflowRight": -29,
+      "overflowLeft": -29,
+      "overflowBottom": -12,
+      "fits": true
+    },
+    {
+      "id": "composition_root",
+      "rectW": 190,
+      "textW": 117.8,
+      "rectH": 64,
+      "textH": 40,
+      "textLines": 2,
+      "rectX": 235.5,
+      "textX": 271.6,
+      "overflowRight": -36.1,
+      "overflowLeft": -36.1,
+      "overflowBottom": -12,
+      "fits": true
+    },
+    {
+      "id": "theme_store",
+      "rectW": 150,
+      "textW": 82.2,
+      "rectH": 64,
+      "textH": 40,
+      "textLines": 2,
+      "rectX": 480.5,
+      "textX": 514.4,
+      "overflowRight": -33.9,
+      "overflowLeft": -33.9,
+      "overflowBottom": -12,
+      "fits": true
+    },
+    {
+      "id": "chat_panel",
+      "rectW": 151,
+      "textW": 93.7,
+      "rectH": 64,
+      "textH": 40,
+      "textLines": 2,
+      "rectX": 30,
+      "textX": 58.6,
+      "overflowRight": -28.6,
+      "overflowLeft": -28.6,
+      "overflowBottom": -12,
+      "fits": true
+    },
+    {
+      "id": "llm_client",
+      "rectW": 164,
+      "textW": 115.1,
+      "rectH": 64,
+      "textH": 40,
+      "textLines": 2,
+      "rectX": 248.5,
+      "textX": 272.9,
+      "overflowRight": -24.4,
+      "overflowLeft": -24.4,
+      "overflowBottom": -12,
+      "fits": true
+    },
+    {
+      "id": "bridge_layer",
+      "rectW": 150,
+      "textW": 92.9,
+      "rectH": 64,
+      "textH": 40,
+      "textLines": 2,
+      "rectX": 480.5,
+      "textX": 509.1,
+      "overflowRight": -28.6,
+      "overflowLeft": -28.6,
+      "overflowBottom": -12,
+      "fits": true
+    },
+    {
+      "id": "command_engine",
+      "rectW": 204,
+      "textW": 143.4,
+      "rectH": 64,
+      "textH": 40,
+      "textLines": 2,
+      "rectX": 688.5,
+      "textX": 718.8,
+      "overflowRight": -30.3,
+      "overflowLeft": -30.3,
+      "overflowBottom": -12,
+      "fits": true
+    },
+    {
+      "id": "canvas_adapter",
+      "rectW": 158,
+      "textW": 102.6,
+      "rectH": 64,
+      "textH": 40,
+      "textLines": 2,
+      "rectX": 936.5,
+      "textX": 964.2,
+      "overflowRight": -27.7,
+      "overflowLeft": -27.7,
+      "overflowBottom": -12,
+      "fits": true
+    },
+    {
+      "id": "project_store",
+      "rectW": 181,
+      "textW": 108,
+      "rectH": 64,
+      "textH": 40,
+      "textLines": 2,
+      "rectX": 465,
+      "textX": 501.5,
+      "overflowRight": -36.5,
+      "overflowLeft": -36.5,
+      "overflowBottom": -12,
+      "fits": true
+    },
+    {
+      "id": "context_store",
+      "rectW": 181,
+      "textW": 110.6,
+      "rectH": 64,
+      "textH": 40,
+      "textLines": 2,
+      "rectX": 700,
+      "textX": 735.2,
+      "overflowRight": -35.2,
+      "overflowLeft": -35.2,
+      "overflowBottom": -12,
+      "fits": true
+    },
+    {
+      "id": "canvas_island",
+      "rectW": 174,
+      "textW": 116,
+      "rectH": 64,
+      "textH": 40,
+      "textLines": 2,
+      "rectX": 928.5,
+      "textX": 957.5,
+      "overflowRight": -29,
+      "overflowLeft": -29,
+      "overflowBottom": -12,
+      "fits": true
+    }
+  ],
+  "liveness": {
+    "selectOk": true,
+    "selectedIds": [],
+    "moveOk": true,
+    "movedBy": 60,
+    "contextSelectionIds": [
+      "node-bridge_layer"
+    ]
+  },
+  "realDrag": {
+    "from": {
+      "x": 952,
+      "y": 384
+    },
+    "to": {
+      "x": 952,
+      "y": 528
+    },
+    "nodeBefore": {
+      "x": 688.5,
+      "y": 210
+    },
+    "labelBefore": {
+      "x": 718.8125,
+      "y": 222
+    },
+    "arrowGeomBefore": {
+      "x": 634.5,
+      "y": 242,
+      "w": 50,
+      "h": 0
+    },
+    "arrowVersionBefore": 2,
+    "nodeAfter": {
+      "x": 688.5,
+      "y": 330
+    },
+    "labelAfter": {
+      "x": 718.8125,
+      "y": 342
+    },
+    "arrowGeomAfter": {
+      "x": 626.8933255633727,
+      "y": 273.9476710664617,
+      "w": 104.3316415556344,
+      "h": 54.76599922810675
+    },
+    "arrowVersionAfter": 14,
+    "selectedOnPointerDown": "node-command_engine",
+    "nodeMovedBy": 120,
+    "labelMovedBy": 120,
+    "arrowVersionChanged": true,
+    "arrowGeomChanged": true
+  },
+  "problems": []
+}

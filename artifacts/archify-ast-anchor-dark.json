@@ -1,0 +1,77 @@
+{
+  "theme": "dark",
+  "ok": true,
+  "report": {
+    "previewNoMutate": true,
+    "confirmed": true,
+    "components": [
+      "web",
+      "api",
+      "db",
+      "log"
+    ],
+    "allHaveAnchor": true,
+    "web": {
+      "own": [
+        "src/web/app.mjs"
+      ],
+      "depsL1": [
+        "api"
+      ],
+      "depsL2": [
+        [
+          "db",
+          "api"
+        ],
+        [
+          "log",
+          "api"
+        ]
+      ],
+      "usersL1": []
+    },
+    "webExact": true,
+    "noManifestLeak": true,
+    "fingerprintBefore": "[{\"id\":\"edge-api-db\",\"customData\":{\"edgeLabel\":\"SQL\",\"archify\":{\"version\":1,\"projectionId\":\"proj-19a21b830e870a0925ab04335f31bdf0\",\"diagramType\":\"architecture\",\"sourceElementKind\":\"connection\",\"sourceElementId\":\"api-db\",\"skillHash\":\"sha256:ast-fixture\",\"projectSnapshot\":\"a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c\"}}},{\"id\":\"edge-api-log\",\"customData\":{\"edgeLabel\":\"LOG\",\"archify\":{\"version\":1,\"projectionId\":\"proj-19a21b830e870a0925ab04335f31bdf0\",\"diagramType\":\"architecture\",\"sourceElementKind\":\"connection\",\"sourceElementId\":\"api-log\",\"skillHash\":\"sha256:ast-fixture\",\"projectSnapshot\":\"a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c\"}}},{\"id\":\"edge-web-api\",\"customData\":{\"edgeLabel\":\"HTTP\",\"archify\":{\"version\":1,\"projectionId\":\"proj-19a21b830e870a0925ab04335f31bdf0\",\"diagramType\":\"architecture\",\"sourceElementKind\":\"connection\",\"sourceElementId\":\"web-api\",\"skillHash\":\"sha256:ast-fixture\",\"projectSnapshot\":\"a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c\"}}},{\"id\":\"frame-0-backend\",\"customData\":{\"archifyBoundary\":true,\"archify\":{\"version\":1,\"projectionId\":\"proj-19a21b830e870a0925ab04335f31bdf0\",\"diagramType\":\"architecture\",\"sourceElementKind\":\"boundary\",\"sourceElementId\":\"backend\",\"skillHash\":\"sha256:ast-fixture\",\"projectSnapshot\":\"a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c\"}}},{\"id\":\"node-api\",\"customData\":{\"projectNodeId\":\"api\",\"archify\":{\"version\":1,\"projectionId\":\"proj-19a21b830e870a0925ab04335f31bdf0\",\"diagramType\":\"architecture\",\"sourceElementKind\":\"component\",\"sourceElementId\":\"api\",\"skillHash\":\"sha256:ast-fixture\",\"projectSnapshot\":\"a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c\",\"evidenceRefs\":[\"src/api/server.mjs\"],\"astAnchor\":{\"version\":1,\"componentId\":\"api\",\"own\":[\"src/api/server.mjs\"],\"dependenciesL1\":[{\"componentId\":\"db\",\"files\":[\"src/db/index.mjs\"]},{\"componentId\":\"log\",\"files\":[\"src/log/index.mjs\"]}],\"dependenciesL2\":[],\"dependentsL1\":[{\"componentId\":\"web\",\"files\":[\"src/web/app.mjs\"]}],\"dependentsL2\":[]}}}},{\"id\":\"node-db\",\"customData\":{\"projectNodeId\":\"db\",\"archify\":{\"version\":1,\"projectionId\":\"proj-19a21b830e870a0925ab04335f31bdf0\",\"diagramType\":\"architecture\",\"sourceElementKind\":\"component\",\"sourceElementId\":\"db\",\"skillHash\":\"sha256:ast-fixture\",\"projectSnapshot\":\"a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c\",\"evidenceRefs\":[\"src/db/index.mjs\"],\"astAnchor\":{\"version\":1,\"componentId\":\"db\",\"own\":[\"src/db/index.mjs\"],\"dependenciesL1\":[],\"dependenciesL2\":[],\"dependentsL1\":[{\"componentId\":\"api\",\"files\":[\"src/api/server.mjs\"]}],\"dependentsL2\":[{\"componentId\":\"web\",\"via\":\"api\",\"files\":[\"src/web/app.mjs\"]}]}}}},{\"id\":\"node-log\",\"customData\":{\"projectNodeId\":\"log\",\"archify\":{\"version\":1,\"projectionId\":\"proj-19a21b830e870a0925ab04335f31bdf0\",\"diagramType\":\"architecture\",\"sourceElementKind\":\"component\",\"sourceElementId\":\"log\",\"skillHash\":\"sha256:ast-fixture\",\"projectSnapshot\":\"a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c\",\"evidenceRefs\":[\"src/log/index.mjs\"],\"astAnchor\":{\"version\":1,\"componentId\":\"log\",\"own\":[\"src/log/index.mjs\"],\"dependenciesL1\":[],\"dependenciesL2\":[],\"dependentsL1\":[{\"componentId\":\"api\",\"files\":[\"src/api/server.mjs\"]}],\"dependentsL2\":[{\"componentId\":\"web\",\"via\":\"api\",\"files\":[\"src/web/app.mjs\"]}]}}}},{\"id\":\"node-web\",\"customData\":{\"projectNodeId\":\"web\",\"archify\":{\"version\":1,\"projectionId\":\"proj-19a21b830e870a0925ab04335f31bdf0\",\"diagramType\":\"architecture\",\"sourceElementKind\":\"component\",\"sourceElementId\":\"web\",\"skillHash\":\"sha256:ast-fixture\",\"projectSnapshot\":\"a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c\",\"evidenceRefs\":[\"src/web/app.mjs\"],\"astAnchor\":{\"version\":1,\"componentId\":\"web\",\"own\":[\"src/web/app.mjs\"],\"dependenciesL1\":[{\"componentId\":\"api\",\"files\":[\"src/api/server.mjs\"]}],\"dependenciesL2\":[{\"componentId\":\"db\",\"via\":\"api\",\"files\":[\"src/db/index.mjs\"]},{\"componentId\":\"log\",\"via\":\"api\",\"files\":[\"src/log/index.mjs\"]}],\"dependentsL1\":[],\"dependentsL2\":[]}}}},{\"id\":\"text-api\",\"customData\":{\"projectNodeId\":\"api\",\"archify\":{\"version\":1,\"projectionId\":\"proj-19a21b830e870a0925ab04335f31bdf0\",\"diagramType\":\"architecture\",\"sourceElementKind\":\"component\",\"sourceElementId\":\"api\",\"skillHash\":\"sha256:ast-fixture\",\"projectSnapshot\":\"a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c\",\"evidenceRefs\":[\"src/api/server.mjs\"],\"astAnchor\":{\"version\":1,\"componentId\":\"api\",\"own\":[\"src/api/server.mjs\"],\"dependenciesL1\":[{\"componentId\":\"db\",\"files\":[\"src/db/index.mjs\"]},{\"componentId\":\"log\",\"files\":[\"src/log/index.mjs\"]}],\"dependenciesL2\":[],\"dependentsL1\":[{\"componentId\":\"web\",\"files\":[\"src/web/app.mjs\"]}],\"dependentsL2\":[]}}}},{\"id\":\"text-db\",\"customData\":{\"projectNodeId\":\"db\",\"archify\":{\"version\":1,\"projectionId\":\"proj-19a21b830e870a0925ab04335f31bdf0\",\"diagramType\":\"architecture\",\"sourceElementKind\":\"component\",\"sourceElementId\":\"db\",\"skillHash\":\"sha256:ast-fixture\",\"projectSnapshot\":\"a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c\",\"evidenceRefs\":[\"src/db/index.mjs\"],\"astAnchor\":{\"version\":1,\"componentId\":\"db\",\"own\":[\"src/db/index.mjs\"],\"dependenciesL1\":[],\"dependenciesL2\":[],\"dependentsL1\":[{\"componentId\":\"api\",\"files\":[\"src/api/server.mjs\"]}],\"dependentsL2\":[{\"componentId\":\"web\",\"via\":\"api\",\"files\":[\"src/web/app.mjs\"]}]}}}},{\"id\":\"text-log\",\"customData\":{\"projectNodeId\":\"log\",\"archify\":{\"version\":1,\"projectionId\":\"proj-19a21b830e870a0925ab04335f31bdf0\",\"diagramType\":\"architecture\",\"sourceElementKind\":\"component\",\"sourceElementId\":\"log\",\"skillHash\":\"sha256:ast-fixture\",\"projectSnapshot\":\"a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c\",\"evidenceRefs\":[\"src/log/index.mjs\"],\"astAnchor\":{\"version\":1,\"componentId\":\"log\",\"own\":[\"src/log/index.mjs\"],\"dependenciesL1\":[],\"dependenciesL2\":[],\"dependentsL1\":[{\"componentId\":\"api\",\"files\":[\"src/api/server.mjs\"]}],\"dependentsL2\":[{\"componentId\":\"web\",\"via\":\"api\",\"files\":[\"src/web/app.mjs\"]}]}}}},{\"id\":\"text-web\",\"customData\":{\"projectNodeId\":\"web\",\"archify\":{\"version\":1,\"projectionId\":\"proj-19a21b830e870a0925ab04335f31bdf0\",\"diagramType\":\"architecture\",\"sourceElementKind\":\"component\",\"sourceElementId\":\"web\",\"skillHash\":\"sha256:ast-fixture\",\"projectSnapshot\":\"a7044cc794d0f9e58540f507697d9a2a154dce7b567c5ca297a74c2325a87a6c\",\"evidenceRefs\":[\"src/web/app.mjs\"],\"astAnchor\":{\"version\":1,\"componentId\":\"web\",\"own\":[\"src/web/app.mjs\"],\"dependenciesL1\":[{\"componentId\":\"api\",\"files\":[\"src/api/server.mjs\"]}],\"dependenciesL2\":[{\"componentId\":\"db\",\"via\":\"api\",\"files\":[\"src/db/index.mjs\"]},{\"componentId\":\"log\",\"via\":\"api\",\"files\":[\"src/log/index.mjs\"]}],\"dependentsL1\":[],\"dependentsL2\":[]}}}}]",
+    "expand": {
+      "ownOk": true,
+      "ownRels": [
+        "src/web/app.mjs"
+      ],
+      "ownNoContent": true,
+      "l1Ok": true,
+      "l1Rels": [
+        "src/api/server.mjs",
+        "src/web/app.mjs"
+      ],
+      "l2Ok": true,
+      "l2Rels": [
+        "src/api/server.mjs",
+        "src/db/index.mjs",
+        "src/log/index.mjs",
+        "src/web/app.mjs"
+      ]
+    },
+    "preview": {
+      "ok": true,
+      "rel": "src/web/app.mjs",
+      "returnedLines": 10
+    },
+    "previewOutOfScopeRefused": true,
+    "fingerprintUnchanged": true,
+    "staleRefused": true,
+    "saveOk": true,
+    "reopenOk": true,
+    "reopenAnchor": {
+      "componentId": "web",
+      "own": [
+        "src/web/app.mjs"
+      ],
+      "depsL1": [
+        "api"
+      ]
+    },
+    "reopenAnchorOk": true
+  },
+  "passedAt": "2026-09-02T18:13:04.121Z"
+}

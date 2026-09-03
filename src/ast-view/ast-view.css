@@ -1,0 +1,596 @@
+/* AST uses aliases of the shared canvas theme variables declared on #ast-root.
+   It has no independent light/dark state and therefore cannot drift from the
+   Excalidraw theme selected in the main window. */
+
+.ast-dock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: var(--ast-bg, var(--default-bg, #fff));
+  color: var(--ast-fg, var(--default-fg, #1e1e1e));
+  border: 0;
+  font-size: 13px;
+  overflow: hidden;
+}
+
+.ast-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 42px;
+  padding: 8px 130px 8px 14px;
+  border-bottom: 1px solid var(--ast-border, var(--default-border, #e0e0e0));
+  flex: 0 0 auto;
+}
+
+.ast-title {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.ast-gear {
+  background: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 2px 6px;
+  opacity: 0.7;
+}
+
+.ast-gear:hover { opacity: 1; }
+
+.ast-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--ast-border, var(--default-border, #e0e0e0));
+  flex: 0 0 auto;
+}
+
+.ast-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 6px;
+  border: 1px solid var(--ast-border, var(--default-border, #e0e0e0));
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.ast-tab-active {
+  background: var(--ast-accent, var(--default-accent, rgba(0, 0, 0, 0.08)));
+  font-weight: 600;
+}
+
+.ast-tab-x {
+  font-size: 10px;
+  opacity: 0.6;
+}
+
+.ast-tab-x:hover { opacity: 1; }
+
+.ast-body {
+  flex: 1 1 auto;
+  overflow: auto;
+  padding: 16px 18px 28px;
+  background-image: radial-gradient(circle at 1px 1px, color-mix(in srgb, var(--ast-border, #e0e0e0) 55%, transparent) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+
+.ast-empty,
+.ast-muted {
+  color: var(--ast-muted, var(--default-muted, #888));
+  padding: 8px 0;
+  font-size: 12px;
+}
+
+.ast-scopes {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.ast-scope {
+  padding: 2px 8px;
+  border: 1px solid var(--ast-border, var(--default-border, #e0e0e0));
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.ast-scope-active {
+  background: var(--ast-accent, var(--default-accent, rgba(0, 0, 0, 0.08)));
+  font-weight: 600;
+}
+
+.ast-graph-info {
+  color: var(--ast-muted, var(--default-muted, #888));
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.ast-files { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; align-items: start; }
+
+.ast-file {
+  border: 1px solid var(--ast-border, var(--default-border, #e0e0e0));
+  border-radius: 10px;
+  padding: 8px 10px 10px;
+  background: color-mix(in srgb, var(--ast-bg, var(--default-bg, #fff)) 94%, transparent);
+  box-shadow: 0 1px 2px rgba(0,0,0,.06), 0 8px 22px rgba(0,0,0,.05);
+}
+.ast-file-expanded { border-color: color-mix(in srgb, var(--ast-accent, #2783de) 55%, var(--ast-border, #e0e0e0)); }
+
+.ast-file-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.ast-file-rel {
+  font-family: var(--ast-mono, monospace);
+  font-size: 12px;
+  word-break: break-all;
+}
+
+.ast-file-lines {
+  color: var(--ast-muted, var(--default-muted, #888));
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.ast-symbols {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 4px 0;
+}
+
+.ast-file-relations { display: flex; gap: 6px; margin: 2px 0 8px 20px; }
+.ast-file-relations span { padding: 2px 7px; border: 1px solid var(--ast-border, #e0e0e0); border-radius: 999px; color: var(--ast-muted, #888); font-size: 10px; }
+
+.ast-symbol {
+  font-family: var(--ast-mono, monospace);
+  font-size: 10px;
+  background: var(--ast-accent, var(--default-accent, rgba(0, 0, 0, 0.05)));
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+.ast-preview-btn {
+  background: transparent;
+  border: 1px solid var(--ast-border, var(--default-border, #e0e0e0));
+  border-radius: 4px;
+  color: inherit;
+  cursor: pointer;
+  font-size: 11px;
+  padding: 2px 8px;
+}
+
+.ast-edges {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px;
+  border: 1px solid var(--ast-border, #e0e0e0);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--ast-bg, #fff) 92%, transparent);
+}
+.ast-edges-title { margin-bottom: 4px; font-size: 12px; font-weight: 700; }
+
+.ast-edge {
+  font-family: var(--ast-mono, monospace);
+  font-size: 11px;
+  color: var(--ast-muted, #888);
+}
+
+.ast-preview {
+  margin-top: 8px;
+  border: 1px solid var(--ast-border, var(--default-border, #e0e0e0));
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--ast-bg, var(--default-bg, #fff));
+  box-shadow: 0 1px 2px rgba(0,0,0,.06), 0 12px 32px rgba(0,0,0,.10);
+}
+
+.ast-preview-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 8px;
+  background: var(--ast-accent, var(--default-accent, rgba(0, 0, 0, 0.05)));
+}
+
+.ast-preview-rel {
+  font-family: var(--ast-mono, monospace);
+  font-size: 11px;
+  word-break: break-all;
+}
+
+.ast-preview-meta {
+  color: var(--ast-muted, var(--default-muted, #888));
+  font-size: 11px;
+  padding: 3px 8px;
+}
+
+.ast-preview-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-right: 8px; border-bottom: 1px solid var(--ast-border, #e0e0e0); }
+.ast-edit-btn, .ast-editor-cancel, .ast-editor-save {
+  min-height: 36px; padding: 0 12px; border: 1px solid var(--ast-border, #e0e0e0); border-radius: 7px;
+  background: transparent; color: inherit; cursor: pointer; font-size: 12px;
+}
+.ast-editor-save { border-color: var(--ast-accent, #2783de); background: var(--ast-accent, #2783de); color: #fff; }
+.ast-editor-save:disabled { opacity: .6; cursor: wait; }
+.ast-editor { padding: 10px; }
+.ast-editor-area {
+  display: block; width: 100%; min-height: 360px; resize: vertical; box-sizing: border-box;
+  border: 1px solid var(--ast-border, #e0e0e0); border-radius: 8px; padding: 12px;
+  background: color-mix(in srgb, var(--ast-bg, #fff) 93%, #2783de); color: inherit;
+  font: 12px/1.55 var(--ast-mono, Menlo, Consolas, monospace); tab-size: 2;
+  caret-color: var(--ast-fg);
+}
+.ast-editor-area:focus { outline: 2px solid var(--ast-accent, #2783de); outline-offset: 2px; }
+.ast-editor-status { min-height: 18px; padding: 8px 2px 4px; color: var(--ast-muted, #888); font-size: 11px; }
+.ast-editor-actions { display: flex; justify-content: flex-end; gap: 8px; }
+
+.ast-code {
+  margin: 0;
+  padding: 8px;
+  font-family: var(--ast-mono, monospace);
+  font-size: 11px;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-x: auto;
+  max-height: 280px;
+}
+
+.ast-preview-error {
+  color: var(--ast-error, #c0392b);
+  padding: 8px;
+  font-size: 12px;
+}
+
+.ast-error {
+  color: var(--ast-error, #c0392b);
+  padding: 8px 0;
+  font-size: 12px;
+}
+
+.ast-load-more {
+  display: block;
+  margin: 6px 8px;
+  background: transparent;
+  border: 1px solid var(--ast-border, var(--default-border, #e0e0e0));
+  border-radius: 4px;
+  color: inherit;
+  cursor: pointer;
+  font-size: 11px;
+  padding: 2px 8px;
+}
+
+
+/* One explicit action instead of hijacking right-click directly. Non-Archify
+   right-clicks still fall through to Excalidraw's native context menu. */
+.ast-context-menu {
+  position: fixed;
+  z-index: 30;
+  min-width: 170px;
+  padding: 4px;
+  border: 1px solid var(--ast-border, var(--default-border, #e0e0e0));
+  border-radius: 7px;
+  background: var(--ast-bg, var(--default-bg, #fff));
+  color: var(--ast-fg, var(--default-fg, #1e1e1e));
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.22);
+}
+.ast-context-menu button {
+  display: block;
+  width: 100%;
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+.ast-context-menu button:hover,
+.ast-context-menu button:focus-visible {
+  background: var(--ast-accent, var(--default-accent, rgba(0, 0, 0, 0.08)));
+  outline: none;
+}
+
+
+#ast-root.ast-open .ast-dock {
+  animation: ast-workspace-in 120ms ease-out;
+}
+@keyframes ast-workspace-in {
+  from { opacity: 0; transform: scale(0.995); }
+  to { opacity: 1; transform: scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  #ast-root.ast-open .ast-dock { animation: none; }
+}
+
+
+/* Phase 2A hardening: explicit states and an optional resizable pinned dock. */
+.ast-dock { container-type: inline-size; }
+@container (max-width: 460px) {
+  .ast-header { padding-right: 118px; }
+  .ast-files { grid-template-columns: 1fr; }
+  .ast-file-head { flex-wrap: wrap; }
+  .ast-file-lines { white-space: normal; }
+}
+.ast-header-actions { display: flex; align-items: center; gap: 8px; }
+.ast-header-actions button, .ast-refresh, .ast-load-more, .ast-preview-btn { min-height: 36px; }
+.ast-pin { font-size: 12px; }
+.ast-resizer { display: none; position: absolute; inset: 0 auto 0 0; width: 8px; cursor: ew-resize; z-index: 2; }
+#ast-root.ast-pinned { left: auto; width: var(--ast-dock-width, 480px); background: transparent; box-shadow: -4px 0 20px rgba(0,0,0,.16); }
+#ast-root.ast-pinned .ast-resizer { display: block; }
+.ast-status { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 0 0 12px; padding: 10px 12px; border: 1px solid var(--ast-border, #e0e0e0); border-radius: 8px; }
+.ast-status-stale { border-color: #d5803b; background: color-mix(in srgb, #d5803b 10%, transparent); }
+.ast-status-partial, .ast-status-unsupported { border-color: #2783de; background: color-mix(in srgb, #2783de 9%, transparent); }
+.ast-refresh { border: 1px solid currentColor; border-radius: 6px; background: transparent; color: inherit; cursor: pointer; padding: 6px 12px; }
+.ast-tab-state { font-size: 9px; }
+.ast-state-ready { color: #46a171; } .ast-state-loading { color: #2783de; } .ast-state-stale { color: #d5803b; } .ast-state-partial, .ast-state-unsupported { color: #2783de; } .ast-state-error { color: #e56458; }
+.ast-file-head { width: 100%; border: 0; background: transparent; color: inherit; cursor: pointer; padding: 4px 0; text-align: left; }
+.ast-file-chevron { flex: 0 0 14px; }
+.ast-file-rel { flex: 1 1 auto; }
+.ast-symbol { border: 1px solid transparent; color: inherit; cursor: pointer; }
+.ast-symbol-selected { border-color: var(--ast-accent, #2783de); }
+.ast-gear:focus-visible, .ast-tab:focus-visible, .ast-scope:focus-visible, .ast-file-head:focus-visible, .ast-symbol:focus-visible, .ast-preview-btn:focus-visible, .ast-refresh:focus-visible { outline: 2px solid var(--ast-accent, #2783de); outline-offset: 2px; }
+@media (max-width: 720px) { #ast-root.ast-pinned { width: min(100vw, var(--ast-dock-width, 480px)); } .ast-header { padding-right: 122px; } .ast-files { grid-template-columns: 1fr; } }
+
+/* Full-size Code Canvas view. File cards live on a scrollable graph stage and
+   SVG dependencies are routed behind them, matching the supplied prototype. */
+.ast-canvas-shell {
+  position: relative;
+  width: 100%;
+  min-height: 560px;
+  overflow: auto;
+  border: 1px solid var(--ast-border, #e0e0e0);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--ast-bg, #191919) 97%, #2783de);
+}
+.ast-canvas-stage { position: relative; isolation: isolate; }
+.ast-canvas-edges { position: absolute; inset: 0; z-index: 0; overflow: visible; pointer-events: none; }
+.ast-canvas-edge { fill: none; stroke: color-mix(in srgb, var(--ast-accent, #5e9fe8) 55%, transparent); stroke-width: 1.35; }
+.ast-canvas-edges marker path { fill: var(--ast-accent, #5e9fe8); }
+.ast-listing-card {
+  position: absolute;
+  z-index: 1;
+  width: 360px;
+  height: 292px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--ast-border, #e0e0e0) 90%, transparent);
+  border-radius: 9px;
+  background: var(--ast-bg, #191919);
+  box-shadow: 0 1px 2px rgba(0,0,0,.12), 0 10px 28px rgba(0,0,0,.18);
+}
+.ast-listing-head { display: flex; align-items: center; gap: 8px; min-height: 38px; padding: 8px 10px; border-bottom: 1px solid var(--ast-border, #e0e0e0); background: color-mix(in srgb, var(--ast-bg, #191919) 92%, #2783de); }
+.ast-language-dot { width: 8px; height: 8px; flex: 0 0 8px; border-radius: 50%; background: #5e9fe8; }
+.ast-lang-javascript, .ast-lang-typescript { background: #eac26b; }
+.ast-lang-php { background: #bf8eda; }
+.ast-lang-python { background: #72bc8f; }
+.ast-listing-rel { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: 600 12px/1.25 var(--ast-mono, monospace); }
+.ast-listing-symbols { display: flex; flex-wrap: wrap; gap: 4px; min-height: 36px; max-height: 58px; overflow: hidden; padding: 6px 10px; border-bottom: 1px solid var(--ast-border, #e0e0e0); }
+.ast-listing-symbols span { padding: 2px 5px; border-radius: 4px; background: color-mix(in srgb, var(--ast-accent, #5e9fe8) 14%, transparent); color: var(--ast-muted, #888); font: 9px/1.25 var(--ast-mono, monospace); }
+.ast-listing-symbols .ast-listing-empty { background: transparent; }
+.ast-listing-code { flex: 1 1 auto; min-height: 0; margin: 0; overflow: hidden; padding: 10px 12px; white-space: pre-wrap; word-break: break-word; color: var(--ast-fg, #fff); font: 10.5px/1.48 var(--ast-mono, Menlo, monospace); tab-size: 2; }
+.ast-listing-foot { display: flex; align-items: center; gap: 6px; min-height: 38px; padding: 5px 8px 5px 10px; border-top: 1px solid var(--ast-border, #e0e0e0); }
+.ast-listing-language { margin-right: auto; color: var(--ast-muted, #888); font: 10px var(--ast-mono, monospace); }
+.ast-card-edit { min-height: 30px; padding: 0 9px; border: 1px solid var(--ast-accent, #2783de); border-radius: 6px; background: transparent; color: var(--ast-accent, #2783de); cursor: pointer; font-size: 11px; }
+.ast-listing-foot .ast-preview-btn { min-height: 30px; }
+
+/* Listing/editor is a nested overlay inside the full AST workspace. */
+.ast-preview {
+  position: fixed;
+  z-index: 6;
+  inset: 70px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background: var(--ast-bg, #191919);
+}
+.ast-preview .ast-code { flex: 1 1 auto; max-height: none; overflow: auto; }
+.ast-preview .ast-editor { display: flex; flex: 1 1 auto; min-height: 0; flex-direction: column; }
+.ast-preview .ast-editor-area { flex: 1 1 auto; min-height: 220px; }
+@media (max-width: 720px) {
+  .ast-body { padding: 12px; }
+  .ast-preview { inset: 62px 10px 10px; }
+  .ast-listing-card { width: 320px; }
+}
+
+/* --- Excalidraw-наследуемый скин ------------------------------------------
+ * Док помечен классами .excalidraw / .theme--dark (см. renderer-entry),
+ * поэтому здесь мы не выдумываем третий набор цветов, а подхватываем
+ * токены самого Excalidraw с фолбэком на наши --ast-*. */
+#ast-root,
+.ast-context-menu {
+  --ast-surface: var(--island-bg-color, var(--ast-bg, #fff));
+  --ast-surface-border: var(--default-border-color, var(--ast-border, #e0e0e0));
+  --ast-surface-hover: var(--button-hover-bg, rgba(0, 0, 0, 0.06));
+  --ast-selected: var(--color-primary-light, rgba(105, 101, 219, 0.15));
+  --ast-primary: var(--color-primary, var(--ast-accent, #6965db));
+  --ast-radius: var(--border-radius-lg, 10px);
+  --ui-font: var(--ui-font, "Assistant", system-ui, sans-serif);
+}
+
+/* Контекстное меню живёт в canvas-root, ВНЕ #ast-root, поэтому раньше
+ * не видело алиасы --ast-* и всегда красилось светлым фолбэком.
+ * Теперь тема берётся из data-theme самого меню. */
+.ast-context-menu {
+  font-family: var(--ui-font);
+  border-color: var(--ast-surface-border);
+  background: var(--ast-surface);
+  border-radius: var(--ast-radius);
+  color: var(--text-primary-color, var(--ast-fg, #1e1e1e));
+}
+.ast-context-menu[data-theme='dark'] {
+  --ast-surface: var(--island-bg-color, #232329);
+  --ast-surface-border: var(--default-border-color, #2c2c30);
+  --ast-surface-hover: var(--button-hover-bg, rgba(255, 255, 255, 0.09));
+  color: var(--text-primary-color, #e8e8e8);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
+}
+.ast-context-menu button {
+  color: inherit;
+  font-family: var(--ui-font);
+  border-radius: calc(var(--ast-radius) - 4px);
+}
+.ast-context-menu button:hover,
+.ast-context-menu button:focus-visible {
+  background: var(--ast-surface-hover);
+}
+
+/* Единый вид всех кнопок дока — раньше каждая была со своим радиусом. */
+#ast-root .ast-gear,
+#ast-root .ast-preview-btn,
+#ast-root .ast-card-edit,
+#ast-root .ast-ask-btn,
+#ast-root .ast-edit-btn,
+#ast-root .ast-editor-cancel,
+#ast-root .ast-editor-save,
+#ast-root .ast-scope,
+#ast-root .ast-refresh,
+#ast-root .ast-load-more,
+#ast-root .ast-symbol-chip {
+  font-family: var(--ui-font);
+  border-radius: var(--ast-radius);
+  border: 1px solid var(--ast-surface-border);
+  background: var(--ast-surface);
+  color: inherit;
+  min-height: 32px;
+  padding: 0 10px;
+  cursor: pointer;
+  transition: background 120ms ease, border-color 120ms ease;
+}
+#ast-root .ast-gear:hover,
+#ast-root .ast-preview-btn:hover,
+#ast-root .ast-card-edit:hover,
+#ast-root .ast-ask-btn:hover,
+#ast-root .ast-edit-btn:hover,
+#ast-root .ast-editor-cancel:hover,
+#ast-root .ast-scope:hover,
+#ast-root .ast-refresh:hover,
+#ast-root .ast-load-more:hover,
+#ast-root .ast-symbol-chip:hover {
+  background: var(--ast-surface-hover);
+}
+#ast-root .ast-scope-active,
+#ast-root .ast-editor-save {
+  background: var(--ast-selected);
+  border-color: var(--ast-primary);
+}
+#ast-root .ast-symbol-chip {
+  min-height: 24px;
+  padding: 0 8px;
+  font-size: 11px;
+}
+
+/* Сквозное позиционирование: оператор → агент и обратно. */
+#ast-root .ast-ask-btn {
+  border-color: var(--ast-primary);
+  color: var(--ast-primary);
+}
+#ast-root .ast-listing-focus {
+  outline: 2px solid var(--ast-primary);
+  outline-offset: 2px;
+  background: var(--ast-selected);
+}
+#ast-root .ast-code-mark {
+  background: var(--ast-selected);
+  color: inherit;
+  box-shadow: inset 2px 0 0 var(--ast-primary);
+}
+#ast-root .ast-focus-note {
+  margin: 4px 0 0;
+  font-size: 11px;
+  color: var(--ast-primary);
+}
+#ast-root .ast-editor-pending {
+  color: var(--ast-primary);
+  border-left: 2px solid var(--ast-primary);
+  padding-left: 8px;
+}
+
+/* --- Excalidraw skin -------------------------------------------------------
+ * Our chrome (toolbar, chat panel, AST dock, AST context menu) borrows
+ * Excalidraw's tokens WITHOUT borrowing its root layout. The bare `excalidraw`
+ * class is Excalidraw's app root: it sets height: 100% and its own flex rules,
+ * which stretched the Theme / Link project / Archify buttons across the whole
+ * window. `excalidraw-skin` only declares the tokens, and the toolbar states its
+ * own layout explicitly so no inherited rule can size the buttons again.
+ */
+.excalidraw-skin {
+  --island-bg-color: #ffffff;
+  --default-border-color: #e0e0e0;
+  --color-primary: #6965db;
+  --color-primary-light: #e3e2fe;
+  --button-hover-bg: #f0f0f0;
+  --text-primary-color: #1b1b1f;
+  --border-radius-lg: 10px;
+  --ui-font: "Assistant", system-ui, -apple-system, sans-serif;
+}
+.excalidraw-skin.theme--dark {
+  --island-bg-color: #232329;
+  --default-border-color: #2e2e33;
+  --color-primary: #a8a5ff;
+  --color-primary-light: #4a47b1;
+  --button-hover-bg: #363541;
+  --text-primary-color: #e3e3e8;
+}
+
+#toolbar.excalidraw-skin {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: auto;
+  min-height: 0;
+  padding: 6px 8px;
+  font-family: var(--ui-font);
+  background: var(--island-bg-color);
+  color: var(--text-primary-color);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--default-border-color);
+}
+#toolbar.excalidraw-skin button {
+  height: 32px;
+  min-height: 32px;
+  max-height: 32px;
+  align-self: center;
+  flex: 0 0 auto;
+  padding: 0 10px;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid var(--default-border-color);
+  border-radius: 8px;
+  cursor: pointer;
+}
+#toolbar.excalidraw-skin button:hover {
+  background: var(--button-hover-bg);
+}
+
+.ast-context-menu.excalidraw-skin {
+  height: auto;
+  width: auto;
+  display: block;
+  font-family: var(--ui-font);
+  background: var(--island-bg-color);
+  color: var(--text-primary-color);
+  border: 1px solid var(--default-border-color);
+  border-radius: var(--border-radius-lg);
+}

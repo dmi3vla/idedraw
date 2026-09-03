@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "canvas-v2-rebuild · Карта архитектуры",
+    "output": "canvas-v2-architecture.html",
+    "quality_profile": "showcase",
+    "viewBox": [1320, 540]
+  },
+  "components": [
+    { "id": "ext_llm_api", "type": "external", "label": "LLM API", "sublabel": "api.b.ai/v1/chat/completions", "tag": "stream", "pos": [40, 80], "size": [180, 64] },
+    { "id": "ui_canvas", "type": "frontend", "label": "Холст Excalidraw", "sublabel": "src/canvas/mount.jsx", "pos": [300, 80], "size": [180, 64] },
+    { "id": "ui_llm", "type": "frontend", "label": "Клиент LLM", "sublabel": "src/chat/llm-client.mjs", "pos": [40, 240], "size": [170, 64] },
+    { "id": "ui_chat", "type": "frontend", "label": "Панель чата", "sublabel": "src/chat/chat-panel.mjs", "pos": [300, 240], "size": [180, 64] },
+    { "id": "ui_bridge", "type": "frontend", "label": "Bridge", "sublabel": "src/bridge/bridge.mjs", "pos": [560, 240], "size": [160, 64] },
+    { "id": "store_fs", "type": "database", "label": "Файлы проекта", "sublabel": "main/project/project-fs.mjs", "pos": [300, 420], "size": [170, 64] },
+    { "id": "svc_executor", "type": "backend", "label": "Исполнитель команд", "sublabel": "main/agent-tool-executor.mjs", "pos": [560, 420], "size": [190, 64] },
+    { "id": "svc_author", "type": "backend", "label": "Авторинг Archify", "sublabel": "main/archify-author.mjs", "pos": [860, 420], "size": [180, 64] },
+    { "id": "ext_cli", "type": "external", "label": "CLI archify", "sublabel": "skills/archify/bin/archify.mjs", "tag": "скил", "pos": [1100, 420], "size": [180, 64] }
+  ],
+  "boundaries": [
+    { "kind": "region", "label": "Процесс main · main/", "wraps": ["svc_executor", "store_fs", "svc_author", "ext_cli"] }
+  ],
+  "connections": [
+    { "id": "dialog", "from": "ui_chat", "to": "ui_llm", "label": "диалог" },
+    { "id": "stream", "from": "ui_llm", "to": "ext_llm_api", "label": "SSE-стрим", "fromSide": "top", "toSide": "bottom" },
+    { "id": "projection", "from": "ui_chat", "to": "ui_canvas", "label": "проекция", "fromSide": "top", "toSide": "bottom" },
+    { "id": "commands", "from": "ui_chat", "to": "ui_bridge", "label": "команды" },
+    { "id": "ipc", "from": "ui_bridge", "to": "svc_executor", "label": "IPC", "fromSide": "bottom", "toSide": "top" },
+    { "id": "tools", "from": "svc_executor", "to": "store_fs", "label": "project.*" },
+    { "id": "author", "from": "svc_executor", "to": "svc_author", "label": "archify.author" },
+    { "id": "spawn", "from": "svc_author", "to": "ext_cli", "label": "spawn" }
+  ],
+  "cards": [
+    { "dot": "cyan", "title": "Диалог в рендерере", "items": ["Панель чата ведёт диалог и получает tool_use", "Клиент LLM стримит /v1/chat/completions напрямую"] },
+    { "dot": "emerald", "title": "Исполнение в main", "items": ["Bridge — фасад IPC-команд над ipcRenderer.invoke", "Исполнитель команд выполняет project.* и archify.author"] },
+    { "dot": "rose", "title": "Генерация Archify", "items": ["Авторинг запускает CLI скила с runToken", "CLI валидирует layout и доставляет HTML-артефакт"] }
+  ]
+}
