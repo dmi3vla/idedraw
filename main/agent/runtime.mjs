@@ -3,10 +3,12 @@
 // frozen per-turn contexts, in-flight generations, and the `let
 // skillStoreInstance` that was assigned in whenReady but declared 3000 lines
 // later — is now owned by the object this returns.
+import { app } from 'electron';
 import { streamChat } from '../chat-stream.mjs';
 import { composeAgentSystemPrompt } from '../skills/skill-store.mjs';
 import { resolveAllowedCommands, intersectToolsWithAllowlist } from '../agent-allowlist.mjs';
 import { classifyTool, executeProjectTool, executeArchifyTool, toToolContent } from '../agent-tool-executor.mjs';
+import { resolveArchifyBinary } from '../archify/binary.mjs';
 import { getProjectRoot, getProjectStatus } from '../project/project-root.mjs';
 import { publicSession } from '../project/project-canvas-file.mjs';
 import { getProjectSnapshot } from '../project/project-fs.mjs';

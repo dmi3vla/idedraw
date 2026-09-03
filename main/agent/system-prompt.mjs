@@ -1,6 +1,6 @@
 // Prompt text and the hard bounds on a single chat turn.
-const CHAT_MAX_TOKENS = 16384; // request max_tokens = generation cap, not context
-const CHAT_SYSTEM = [
+export const CHAT_MAX_TOKENS = 16384; // request max_tokens = generation cap, not context
+export const CHAT_SYSTEM = [
   'Ты — агент-помощник, управляющий холстом Excalidraw через инструменты (commands).',
   'Используй canvas.* команды, чтобы создавать узлы (addNode/addNodes), соединять их',
   'стрелками (addEdge/addEdges), выделять, перемещать (updateNode) и очищать холст.',
@@ -24,5 +24,5 @@ const CHAT_SYSTEM = [
 // Hard bounds on a single chat turn. A live model can loop calling tools forever;
 // these caps (which mirror the reviewer's TOOL_BUDGET_EXHAUSTED requirement) turn
 // a runaway loop into a bounded, observable error instead of an infinite hang.
-const MAX_TOOL_ROUNDS = 20; // model turns that end in >=1 tool_use kept as rounds
-const MAX_TOOL_CALLS = 50; // total tool_use calls across the turn
+export const MAX_TOOL_ROUNDS = 20; // model turns that end in >=1 tool_use kept as rounds
+export const MAX_TOOL_CALLS = 50; // total tool_use calls across the turn

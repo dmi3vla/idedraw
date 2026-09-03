@@ -23,11 +23,6 @@ export function registerConfigIpc({ configStore, secretStore }) {
     return { ok: true };
   });
 
-  ipcMain.handle('secret:setKey', (event, plain) => {
-    secretStore.setKey(plain);
-    return { ok: true };
-  });
-
   ipcMain.handle('secret:clearKey', () => {
     secretStore.clearKey();
     return { ok: true };

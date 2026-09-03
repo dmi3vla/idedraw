@@ -18,14 +18,14 @@ import { runArchifyValidate } from '../../main/archify-client.mjs';
 import { setTestProjectRoot } from '../_helpers/project-root.mjs';
 
 export async function run(ctx = {}) {
-  const { win, visualProof } = ctx;
+  const { win, visualProof, skillStore } = ctx;
   const { mode = 'full', theme = 'dark', archifySpec = 'canvas-v2-architecture.json', scenario = 'none' } = ctx.argv || {};
   const __dirname = APP_ROOT;
   // MAIN-only test hook: enable the archify skill (so `archify:validate` resolves
   // the frozen binary) and point the main-owned project root at the repo root
   // (so the linked `@app/canvas-v2-architecture.json` spec passes the scoped
   // validator). Never exposed to the renderer.
-  if (skillStoreInstance) skillStoreInstance.setEnabled('archify', true);
+  if (skillStore) skillStore.setEnabled('archify', true);
   setTestProjectRoot(process.cwd());
 
   // The toolbar button validates the linked spec and previews `mode:'replace'`.

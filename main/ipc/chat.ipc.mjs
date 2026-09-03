@@ -1,7 +1,6 @@
 // chat:send / chat:toolResult. The turn state lives in the agent runtime, not
 // in module-level maps.
 import { ipcMain } from 'electron';
-import { CHAT_SYSTEM } from '../agent/system-prompt.mjs';
 
 export function registerChatIpc({ configStore, secretStore, agentRuntime, logger }) {
   const { log: gLog, err: gErr } = logger;

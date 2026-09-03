@@ -27,12 +27,12 @@ import { planEvidenceReads, scriptedArchifyModel } from '../../main/agent-script
 import { setTestProjectRoot } from '../_helpers/project-root.mjs';
 
 export async function run(ctx = {}) {
-  const { win, visualProof, configStore, secretStore } = ctx;
+  const { win, visualProof, configStore, secretStore, skillStore } = ctx;
   const { mode = 'full', theme = 'dark' } = ctx.argv || {};
   const __dirname = APP_ROOT;
   // MAIN-only test hooks (never exposed to the renderer): enable the archify skill
   // and point the read-only project root at the fixture project the agent studies.
-  if (skillStoreInstance) skillStoreInstance.setEnabled('archify', true);
+  if (skillStore) skillStore.setEnabled('archify', true);
   setTestProjectRoot(path.join(__dirname, 'tests', 'fixture-project'));
 
   // Collect the renderer-side tool list using the SAME capability filter the chat
